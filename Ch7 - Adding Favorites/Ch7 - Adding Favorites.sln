@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch7 - Adding Favorites", "Ch7 - Adding Favorites.vbproj", "{EF85C7A4-1B92-4513-AE82-A0BC64F88E91}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EF85C7A4-1B92-4513-AE82-A0BC64F88E91}.Debug.ActiveCfg = Debug|.NET
+		{EF85C7A4-1B92-4513-AE82-A0BC64F88E91}.Debug.Build.0 = Debug|.NET
+		{EF85C7A4-1B92-4513-AE82-A0BC64F88E91}.Release.ActiveCfg = Release|.NET
+		{EF85C7A4-1B92-4513-AE82-A0BC64F88E91}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

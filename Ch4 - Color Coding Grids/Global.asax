@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.vb" Inherits="Ch4___Color_Coding_Grids.Global" %>

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch7 - Check Files Are Identical", "Ch7 - Check Files Are Identical.vbproj", "{DD2D9181-EE00-4DAF-A8E2-8D273527F19F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DD2D9181-EE00-4DAF-A8E2-8D273527F19F}.Debug.ActiveCfg = Debug|.NET
+		{DD2D9181-EE00-4DAF-A8E2-8D273527F19F}.Debug.Build.0 = Debug|.NET
+		{DD2D9181-EE00-4DAF-A8E2-8D273527F19F}.Release.ActiveCfg = Release|.NET
+		{DD2D9181-EE00-4DAF-A8E2-8D273527F19F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

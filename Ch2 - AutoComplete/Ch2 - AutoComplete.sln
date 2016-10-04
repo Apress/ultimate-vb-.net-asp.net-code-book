@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch2 - AutoComplete", "Ch2 - AutoComplete.vbproj", "{3BC7363C-4092-41AA-A847-0685F31885B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3BC7363C-4092-41AA-A847-0685F31885B4}.Debug.ActiveCfg = Debug|.NET
+		{3BC7363C-4092-41AA-A847-0685F31885B4}.Debug.Build.0 = Debug|.NET
+		{3BC7363C-4092-41AA-A847-0685F31885B4}.Release.ActiveCfg = Release|.NET
+		{3BC7363C-4092-41AA-A847-0685F31885B4}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

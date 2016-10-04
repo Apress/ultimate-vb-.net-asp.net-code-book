@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch7 - IsConnectionAvailable", "Ch7 - IsConnectionAvailable.vbproj", "{CD19EC1A-CC3B-4C7A-B3E5-162CD71A3CDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CD19EC1A-CC3B-4C7A-B3E5-162CD71A3CDA}.Debug.ActiveCfg = Debug|.NET
+		{CD19EC1A-CC3B-4C7A-B3E5-162CD71A3CDA}.Debug.Build.0 = Debug|.NET
+		{CD19EC1A-CC3B-4C7A-B3E5-162CD71A3CDA}.Release.ActiveCfg = Release|.NET
+		{CD19EC1A-CC3B-4C7A-B3E5-162CD71A3CDA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

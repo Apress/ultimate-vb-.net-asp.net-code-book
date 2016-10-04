@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch7 - Parse Links and Images", "Ch7 - Parse Links and Images.vbproj", "{21EF4DB2-FA2E-4CA3-8519-8353FEDDD1CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{21EF4DB2-FA2E-4CA3-8519-8353FEDDD1CF}.Debug.ActiveCfg = Debug|.NET
+		{21EF4DB2-FA2E-4CA3-8519-8353FEDDD1CF}.Debug.Build.0 = Debug|.NET
+		{21EF4DB2-FA2E-4CA3-8519-8353FEDDD1CF}.Release.ActiveCfg = Release|.NET
+		{21EF4DB2-FA2E-4CA3-8519-8353FEDDD1CF}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

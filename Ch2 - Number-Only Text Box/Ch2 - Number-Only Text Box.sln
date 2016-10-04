@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch2 - Number-Only Text Box", "Ch2 - Number-Only Text Box.vbproj", "{3223F9D7-22C2-46AB-B34C-239C8F4F531A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3223F9D7-22C2-46AB-B34C-239C8F4F531A}.Debug.ActiveCfg = Debug|.NET
+		{3223F9D7-22C2-46AB-B34C-239C8F4F531A}.Debug.Build.0 = Debug|.NET
+		{3223F9D7-22C2-46AB-B34C-239C8F4F531A}.Release.ActiveCfg = Release|.NET
+		{3223F9D7-22C2-46AB-B34C-239C8F4F531A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

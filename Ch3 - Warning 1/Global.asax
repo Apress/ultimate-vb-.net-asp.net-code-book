@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.vb" Inherits="Ch3___Warning_1.Global" %>

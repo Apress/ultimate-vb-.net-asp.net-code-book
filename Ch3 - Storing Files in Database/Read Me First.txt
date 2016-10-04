@@ -1,0 +1,64 @@
+Storing Uploaded Files in your Database
+========================================
+
+Due to the database setup required, there is no VS.NET example included with this tip - however all of the code functions from the book can be found below, ready for you to use straight away with your own file-storing database solution:
+
+        Public Function GetByteArrayFromFileField( _
+            ByVal FileField As System.Web.UI.HtmlControls.HtmlInputFile) _
+            As Byte()
+            ' Returns a byte array from the passed 
+            ' file field controls file
+            Dim intFileLength As Integer, bytData() As Byte
+            Dim objStream As System.IO.Stream
+            If FileFieldSelected(FileField) Then
+                intFileLength = FileField.PostedFile.ContentLength
+                ReDim bytData(intFileLength)
+                objStream = FileField.PostedFile.InputStream
+                objStream.Read(bytData, 0, intFileLength)
+                Return bytData
+            End If
+        End Function
+
+        Public Function FileFieldType(ByVal FileField As _
+          System.Web.UI.HtmlControls.HtmlInputFile) As String
+            ' Returns the type of the posted file
+            If Not FileField.PostedFile Is Nothing Then _
+              Return FileField.PostedFile.ContentType
+        End Function
+
+        Public Function FileFieldLength(ByVal FileField As _
+          System.Web.UI.HtmlControls.HtmlInputFile) As Integer
+            ' Returns the length of the posted file
+            If Not FileField.PostedFile Is Nothing Then _
+              Return FileField.PostedFile.ContentLength
+        End Function
+
+        Public Function FileFieldFilename(ByVal FileField As _
+          System.Web.UI.HtmlControls.HtmlInputFile) As String
+            ' Returns the core filename of the posted file
+            If Not FileField.PostedFile Is Nothing Then _
+              Return Replace(FileField.PostedFile.FileName, _
+              StrReverse(Mid(StrReverse(FileField.PostedFile.FileName), _
+              InStr(1, StrReverse(FileField.PostedFile.FileName), "\"))), "")
+        End Function
+
+
+        Public Sub DeliverFile(ByVal Page As System.Web.UI.Page, _
+          ByVal Data() As Byte, ByVal Type As String, _
+          ByVal Length As Integer, _
+          Optional ByVal DownloadFileName As String = "")
+            ' Delivers a file, such as an image or PDF file,
+            ' back through the Response object
+            ' Sample usage from within an ASP.NET page:
+            ' - DeliverFile(Me, bytFile(), strType, intLength, strDownloadName)
+            With Page.Response
+                .Clear()
+                .ContentType = Type
+                If DownloadFileName <> "" Then
+                    Page.Response.AddHeader("content-disposition", _
+                      "filename=" & DownloadFileName)
+                End If
+                .OutputStream.Write(Data, 0, Length)
+                .End()
+            End With
+        End Sub

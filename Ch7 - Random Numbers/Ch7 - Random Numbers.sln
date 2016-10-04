@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch7 - Random Numbers", "Ch7 - Random Numbers.vbproj", "{30851F58-654E-4BEE-A66C-386FC567DF9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{30851F58-654E-4BEE-A66C-386FC567DF9F}.Debug.ActiveCfg = Debug|.NET
+		{30851F58-654E-4BEE-A66C-386FC567DF9F}.Debug.Build.0 = Debug|.NET
+		{30851F58-654E-4BEE-A66C-386FC567DF9F}.Release.ActiveCfg = Release|.NET
+		{30851F58-654E-4BEE-A66C-386FC567DF9F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

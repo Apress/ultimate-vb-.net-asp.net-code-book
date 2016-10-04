@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch3 - Dynamically Create Images", "http://localhost/Ch3 - Dynamically Create Images/Ch3 - Dynamically Create Images.vbproj", "{A29C2870-34F3-49DB-BD64-9197BF11AB96}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A29C2870-34F3-49DB-BD64-9197BF11AB96}.Debug.ActiveCfg = Debug|.NET
+		{A29C2870-34F3-49DB-BD64-9197BF11AB96}.Debug.Build.0 = Debug|.NET
+		{A29C2870-34F3-49DB-BD64-9197BF11AB96}.Release.ActiveCfg = Release|.NET
+		{A29C2870-34F3-49DB-BD64-9197BF11AB96}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

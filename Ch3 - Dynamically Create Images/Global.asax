@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.vb" Inherits="Ch3___Dynamically_Create_Images.Global" %>

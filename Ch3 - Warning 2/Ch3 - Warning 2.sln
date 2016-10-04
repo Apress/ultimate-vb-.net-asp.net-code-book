@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch3 - Warning 2", "http://localhost/Ch3 - Warning 2/Ch3 - Warning 2.vbproj", "{A1020C0E-8B04-4DCF-83C9-9F52337E1AFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A1020C0E-8B04-4DCF-83C9-9F52337E1AFC}.Debug.ActiveCfg = Debug|.NET
+		{A1020C0E-8B04-4DCF-83C9-9F52337E1AFC}.Debug.Build.0 = Debug|.NET
+		{A1020C0E-8B04-4DCF-83C9-9F52337E1AFC}.Release.ActiveCfg = Release|.NET
+		{A1020C0E-8B04-4DCF-83C9-9F52337E1AFC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

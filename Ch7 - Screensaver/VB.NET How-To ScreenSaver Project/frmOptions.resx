@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+            Microsoft ResX Schema 
+        
+            Version 1.3
+                
+            The primary goals of this format is to allow a simple XML format 
+            that is mostly human readable. The generation and parsing of the 
+            various data types are done through the TypeConverter classes 
+            associated with the data types.
+        
+            Example:
+        
+                ... ado.net/XML headers & schema ...
+                <resheader name="resmimetype">text/microsoft-resx</resheader>
+                <resheader name="version">1.3</resheader>
+                <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+                <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+                <data name="Name1">this is my long string</data>
+                <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+                <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+                    [base64 mime encoded serialized .NET Framework object]
+                </data>
+                <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+                    [base64 mime encoded string representing a byte array form of the .NET Framework object]
+                </data>
+        
+            There are any number of "resheader" rows that contain simple 
+            name/value pairs.
+            
+            Each data row contains a name, and value. The row also contains a 
+            type or mimetype. Type corresponds to a .NET class that support 
+            text/value conversion through the TypeConverter architecture. 
+            Classes that don't support this are serialized and stored with the 
+            mimetype set.
+                     
+            The mimetype is used for serialized objects, and tells the 
+            ResXResourceReader how to depersist the object. This is currently not 
+            extensible. For a given mimetype the value must be set accordingly:
+        
+            Note - application/x-microsoft.net.object.binary.base64 is the format 
+                   that the ResXResourceWriter will generate, however the reader can 
+                   read any of the formats listed below.
+        
+            mimetype: application/x-microsoft.net.object.binary.base64
+            value   : The object must be serialized with 
+                    : System.Serialization.Formatters.Binary.BinaryFormatter
+                    : and then encoded with base64 encoding.
+        
+            mimetype: application/x-microsoft.net.object.soap.base64
+            value   : The object must be serialized with 
+                    : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+                    : and then encoded with base64 encoding.
+            mimetype: application/x-microsoft.net.object.bytearray.base64
+            value   : The object must be serialized into a byte array 
+                    : using a System.ComponentModel.TypeConverter
+                    : and then encoded with base64 encoding.
+        -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnOK.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="btnOK.AccessibleDescription">
+    <value>Ok Button for the Options Dialog</value>
+  </data>
+  <data name="btnOK.AccessibleName">
+    <value>Ok Button</value>
+  </data>
+  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOK.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="btnOK.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="btnOK.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="btnOK.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Standard</value>
+  </data>
+  <data name="btnOK.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="btnOK.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="btnOK.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnOK.ImageIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="btnOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 88</value>
+  </data>
+  <data name="btnOK.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Text">
+    <value>OK</value>
+  </data>
+  <data name="btnOK.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnOK.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder">
+    <value>5</value>
+  </data>
+  <data name="btnCancel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="btnCancel.AccessibleDescription">
+    <value>Cancel button for the Options Dialog</value>
+  </data>
+  <data name="btnCancel.AccessibleName">
+    <value>Cancel Button</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="btnCancel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="btnCancel.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Standard</value>
+  </data>
+  <data name="btnCancel.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="btnCancel.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="btnCancel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnCancel.ImageIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>296, 88</value>
+  </data>
+  <data name="btnCancel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Text">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnCancel.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder">
+    <value>4</value>
+  </data>
+  <data name="chkTransparent.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="chkTransparent.AccessibleDescription">
+    <value>Checkbox to select transparency.</value>
+  </data>
+  <data name="chkTransparent.AccessibleName">
+    <value>Transparent Checkbox</value>
+  </data>
+  <data name="chkTransparent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="chkTransparent.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Normal</value>
+  </data>
+  <data name="chkTransparent.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="chkTransparent.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="chkTransparent.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="chkTransparent.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="chkTransparent.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Standard</value>
+  </data>
+  <data name="chkTransparent.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="chkTransparent.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="chkTransparent.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="chkTransparent.ImageIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="chkTransparent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTransparent.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 8</value>
+  </data>
+  <data name="chkTransparent.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="chkTransparent.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 24</value>
+  </data>
+  <data name="chkTransparent.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>2</value>
+  </data>
+  <data name="chkTransparent.Text">
+    <value>Transparent Colors</value>
+  </data>
+  <data name="chkTransparent.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="chkTransparent.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;chkTransparent.Name">
+    <value>chkTransparent</value>
+  </data>
+  <data name="&gt;&gt;chkTransparent.Type">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTransparent.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkTransparent.ZOrder">
+    <value>3</value>
+  </data>
+  <data name="grpShapes.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="grpShapes.AccessibleDescription">
+    <value>GroupBox containing shapes to use.</value>
+  </data>
+  <data name="grpShapes.AccessibleName">
+    <value>Shapes GroupBox</value>
+  </data>
+  <data name="grpShapes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="grpShapes.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="grpShapes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="grpShapes.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="grpShapes.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="grpShapes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="grpShapes.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 8</value>
+  </data>
+  <data name="grpShapes.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="grpShapes.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>128, 72</value>
+  </data>
+  <data name="grpShapes.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>3</value>
+  </data>
+  <data name="grpShapes.Text">
+    <value>Shapes</value>
+  </data>
+  <data name="grpShapes.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;grpShapes.Name">
+    <value>grpShapes</value>
+  </data>
+  <data name="&gt;&gt;grpShapes.Type">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpShapes.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpShapes.ZOrder">
+    <value>2</value>
+  </data>
+  <data name="optEllipses.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="optEllipses.AccessibleDescription">
+    <value>Option Button to select Ellipses.</value>
+  </data>
+  <data name="optEllipses.AccessibleName">
+    <value>Ellipses option.</value>
+  </data>
+  <data name="optEllipses.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="optEllipses.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Normal</value>
+  </data>
+  <data name="optEllipses.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="optEllipses.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="optEllipses.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="optEllipses.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="optEllipses.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Standard</value>
+  </data>
+  <data name="optEllipses.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="optEllipses.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="optEllipses.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="optEllipses.ImageIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="optEllipses.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="optEllipses.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 40</value>
+  </data>
+  <data name="optEllipses.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="optEllipses.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 24</value>
+  </data>
+  <data name="optEllipses.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>1</value>
+  </data>
+  <data name="optEllipses.Text">
+    <value>Ellipses</value>
+  </data>
+  <data name="optEllipses.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="optEllipses.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;optEllipses.Name">
+    <value>optEllipses</value>
+  </data>
+  <data name="&gt;&gt;optEllipses.Type">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;optEllipses.Parent">
+    <value>grpShapes</value>
+  </data>
+  <data name="&gt;&gt;optEllipses.ZOrder">
+    <value>0</value>
+  </data>
+  <data name="optRectangles.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="optRectangles.AccessibleDescription">
+    <value>Option Button to select Rectangles.</value>
+  </data>
+  <data name="optRectangles.AccessibleName">
+    <value>Rectangles Option</value>
+  </data>
+  <data name="optRectangles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="optRectangles.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Normal</value>
+  </data>
+  <data name="optRectangles.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="optRectangles.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="optRectangles.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="optRectangles.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="optRectangles.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Standard</value>
+  </data>
+  <data name="optRectangles.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="optRectangles.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="optRectangles.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="optRectangles.ImageIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="optRectangles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="optRectangles.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 16</value>
+  </data>
+  <data name="optRectangles.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="optRectangles.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 24</value>
+  </data>
+  <data name="optRectangles.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>0</value>
+  </data>
+  <data name="optRectangles.Text">
+    <value>Rectangles</value>
+  </data>
+  <data name="optRectangles.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="optRectangles.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;optRectangles.Name">
+    <value>optRectangles</value>
+  </data>
+  <data name="&gt;&gt;optRectangles.Type">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;optRectangles.Parent">
+    <value>grpShapes</value>
+  </data>
+  <data name="&gt;&gt;optRectangles.ZOrder">
+    <value>1</value>
+  </data>
+  <data name="cboSpeed.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="cboSpeed.AccessibleDescription">
+    <value>ComboBox with speed of screensaver.</value>
+  </data>
+  <data name="cboSpeed.AccessibleName">
+    <value>Speed ComboBox</value>
+  </data>
+  <data name="cboSpeed.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="cboSpeed.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="cboSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="cboSpeed.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="cboSpeed.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="cboSpeed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="cboSpeed.IntegralHeight" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="cboSpeed.ItemHeight" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>16</value>
+  </data>
+  <data name="cboSpeed.Items.Items">
+    <value>Fast</value>
+  </data>
+  <data name="cboSpeed.Items.Items1">
+    <value>Medium</value>
+  </data>
+  <data name="cboSpeed.Items.Items2">
+    <value>Slow</value>
+  </data>
+  <data name="cboSpeed.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 40</value>
+  </data>
+  <data name="cboSpeed.MaxDropDownItems" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>8</value>
+  </data>
+  <data name="cboSpeed.MaxLength" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>0</value>
+  </data>
+  <data name="cboSpeed.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="cboSpeed.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>121, 24</value>
+  </data>
+  <data name="cboSpeed.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>4</value>
+  </data>
+  <data name="cboSpeed.Text">
+    <value>Medium</value>
+  </data>
+  <data name="cboSpeed.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cboSpeed.Name">
+    <value>cboSpeed</value>
+  </data>
+  <data name="&gt;&gt;cboSpeed.Type">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboSpeed.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboSpeed.ZOrder">
+    <value>1</value>
+  </data>
+  <data name="Label1.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Assembly</value>
+  </data>
+  <data name="Label1.AccessibleDescription">
+    <value>Label reading "Speed"</value>
+  </data>
+  <data name="Label1.AccessibleName">
+    <value>Speed Label.</value>
+  </data>
+  <data name="Label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="Label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="Label1.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="Label1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="Label1.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="Label1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Label1.ImageIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 40</value>
+  </data>
+  <data name="Label1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>64, 23</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>5</value>
+  </data>
+  <data name="Label1.Text">
+    <value>Speed</value>
+  </data>
+  <data name="Label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>TopLeft</value>
+  </data>
+  <data name="Label1.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder">
+    <value>0</value>
+  </data>
+  <data name="$this.Name">
+    <value>frmOptions</value>
+  </data>
+  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>(Default)</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.AccessibleDescription">
+    <value>Form that displays screen saver options.</value>
+  </data>
+  <data name="$this.AccessibleName">
+    <value>Options form.</value>
+  </data>
+  <data name="$this.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>6, 16</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.AutoScrollMargin" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>376, 126</value>
+  </data>
+  <data name="$this.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="$this.Enabled" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>WindowsDefaultLocation</value>
+  </data>
+  <data name="$this.Text">
+    <value>Screen Saver Options</value>
+  </data>
+  <data name="$this.Visible" type="System.Boolean, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;$this.Name">
+    <value>frmOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

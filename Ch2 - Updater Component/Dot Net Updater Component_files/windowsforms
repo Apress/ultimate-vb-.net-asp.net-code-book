@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD id="_ctl0_PageHeading">
+		<title>About Windows Forms</title>
+		<meta name="description" content="Windows Forms is a rich programming framework for building Win32 client applications."></meta>
+		<meta name="keywords" content=""></meta>
+		<link rel="stylesheet" type="text/css" href="/ui/components/style.css"></link>
+	</HEAD>
+	<body BGCOLOR="" background="" TOPMARGIN="0" LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0"><form name="PageForm" method="post" action="Default.aspx" id="PageForm">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTIwNzE0MjE5Mjt0PDtsPGk8MD47aTwxPjs+O2w8dDw7bDxpPDE+O2k8Mj47PjtsPHQ8O2w8aTwwPjs+O2w8dDxAPEFib3V0IFdpbmRvd3MgRm9ybXM7V2luZG93cyBGb3JtcyBpcyBhIHJpY2ggcHJvZ3JhbW1pbmcgZnJhbWV3b3JrIGZvciBidWlsZGluZyBXaW4zMiBjbGllbnQgYXBwbGljYXRpb25zLjtcZTs+Ozs+Oz4+O3Q8QDxcZTtcZTs+Ozs+Oz4+O3Q8O2w8aTwwPjtpPDM+Oz47bDx0PDtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwzPjs+O2w8dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDY+Oz47bDx0PHA8cDxsPEZvbnRfU2l6ZTtfIVNCOz47bDxTeXN0ZW0uV2ViLlVJLldlYkNvbnRyb2xzLkZvbnRVbml0LCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC4zMzAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxYWC1TbWFsbD47aTwzMDc1Pjs+Pjs+Ozs+O3Q8cDxwPGw8V2lkdGg7XyFTQjs+O2w8MTwyMDBweD47aTwyNTc+Oz4+O3A8bDxvbktleVByZXNzOz47bDxqYXZhc2NyaXB0OlN1Ym1pdFNlYXJjaF9jdGwxX1NlYXJjaEJveDEoKVw7Oz4+Pjs7Pjt0PHA8bDxvbkNsaWNrOz47bDxnb1NlYXJjaF9jdGwxX1NlYXJjaEJveDEoKVw7Oz4+Ozs+O3Q8QDxfY3RsMV9TZWFyY2hCb3gxO19jdGwxX1NlYXJjaEJveDFfVGV4dEJveFF1ZXJ5Oy9TZWFyY2gvU2VhcmNoLmFzcHg7X2N0bDFfU2VhcmNoQm94MTtfY3RsMV9TZWFyY2hCb3gxOz47Oz47Pj47Pj47Pj47dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjs+O2w8dDxwPGw8XyFJdGVtQ291bnQ7PjtsPGk8NT47Pj47bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47PjtsPHQ8cDw7cDxsPG9uQ2xpY2s7PjtsPGV4cGFuZGl0KCdfY3RsMV9SaWdodE5hdmlnYXRpb25NZW51X01lbnVTZWN0aW9uc19fY3RsMF9TZWN0aW9uUGFuZWwnKTs+Pj47bDxpPDA+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDwvaW1hZ2VzL2xlZnRuYXZfYXJyb3dkX25ldy5naWY7Pj47Pjs7Pjs+Pjt0PHA8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDBfU2VjdGlvblBhbmVsJyk7Pj47Oz47dDxwPDtwPGw8c3R5bGU7PjtsPGRpc3BsYXk6bm9uZVw7Oz4+Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PHA8O3A8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDFfU2VjdGlvblBhbmVsJyk7Pj4+O2w8aTwwPjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8L2ltYWdlcy9sZWZ0bmF2X2Fycm93ZF9uZXcuZ2lmOz4+Oz47Oz47Pj47dDxwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGwxX1NlY3Rpb25QYW5lbCcpOz4+Ozs+O3Q8cDw7cDxsPHN0eWxlOz47bDxkaXNwbGF5Om5vbmVcOzs+Pj47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1Pjs+O2w8dDxwPDtwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGwyX1NlY3Rpb25QYW5lbCcpOz4+PjtsPGk8MD47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPC9pbWFnZXMvbGVmdG5hdl9hcnJvd2RfbmV3LmdpZjs+Pjs+Ozs+Oz4+O3Q8cDxsPG9uQ2xpY2s7PjtsPGV4cGFuZGl0KCdfY3RsMV9SaWdodE5hdmlnYXRpb25NZW51X01lbnVTZWN0aW9uc19fY3RsMl9TZWN0aW9uUGFuZWwnKTs+Pjs7Pjt0PHA8O3A8bDxzdHlsZTs+O2w8ZGlzcGxheTpub25lXDs7Pj4+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47PjtsPHQ8cDw7cDxsPG9uQ2xpY2s7PjtsPGV4cGFuZGl0KCdfY3RsMV9SaWdodE5hdmlnYXRpb25NZW51X01lbnVTZWN0aW9uc19fY3RsM19TZWN0aW9uUGFuZWwnKTs+Pj47bDxpPDA+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDwvaW1hZ2VzL2xlZnRuYXZfYXJyb3dkX25ldy5naWY7Pj47Pjs7Pjs+Pjt0PHA8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDNfU2VjdGlvblBhbmVsJyk7Pj47Oz47dDxwPDtwPGw8c3R5bGU7PjtsPGRpc3BsYXk6bm9uZVw7Oz4+Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PHA8O3A8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDRfU2VjdGlvblBhbmVsJyk7Pj4+O2w8aTwwPjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8L2ltYWdlcy9sZWZ0bmF2X2Fycm93ZF9uZXcuZ2lmOz4+Oz47Oz47Pj47dDxwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGw0X1NlY3Rpb25QYW5lbCcpOz4+Ozs+O3Q8cDw7cDxsPHN0eWxlOz47bDxkaXNwbGF5Om5vbmVcOzs+Pj47Oz47Pj47Pj47Pj47Pj47Pj47dDxwPHA8bDxUZXh0Oz47bDxBYm91dCBXaW5kb3dzIEZvcm1zOz4+Oz47Oz47Pj47dDw7bDxpPDQ+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPMKpIENvcHlyaWdodCAyMDAzIE1pY3Jvc29mdCBDb3Jwb3JhdGlvbi4gQWxsIFJpZ2h0cyBSZXNlcnZlZC47Pj47Pjs7Pjs+Pjs+Pjs+Pjs+1K1RWKwzWyQOzxUDo4UtaSHOmmo=" />
+
+<script language="javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform = document.PageForm;
+		theform.__EVENTTARGET.value = eventTarget;
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+<table cellSpacing="0" cellPadding="0" width="100%" height="100%" border="0">
+	<tr id="_ctl1_TopNavigation">
+	<td height="103" background="/images/topbar_bg.gif">
+			<table height="103" cellspacing="0" cellpadding="0" width="100%" border="0">
+				<tr>
+					<td id="_ctl1_TopLeftSpace" rowspan="3" width="300" bgcolor="#FFFFFF" valign="top"><a id="_ctl1_Logo" href="/default.aspx" style="border-width:0px;height:103px;width:300px;"><img src="/images/gdn_logo.jpg" border="0" /></a></td>
+
+					<td width="100%" height="27" background="/images/1pix.gif"><img src="/images/1pix.gif" width="1" height="27" alt="" border="0"></td>
+					<td rowspan="3" width="63"><img src="/images/topbar_r.gif" width="63" height="103" alt="" border="0"></td>
+				</tr>
+				<tr>
+					<td height="38" background="/images/1pix.gif" align="right">
+						<table height="38" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td height="3" colspan="2"><img src="/images/1pix.gif" width="1" height="3" alt="" border="0"></td>
+							</tr>
+							<tr>
+								<td>	
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td width="60"><span id="_ctl1_SearchBox1_LabelSearchCaption" class="SearchBoxText" style="font-size:XX-Small;font-weight:bold;">Search&nbsp;</span></td>
+	<td><input name="_ctl1:SearchBox1:TextBoxQuery" type="text" id="_ctl1_SearchBox1_TextBoxQuery" onKeyPress="javascript:SubmitSearch_ctl1_SearchBox1();" style="width:200px;" />
+<input name="_ctl1:SearchBox1:SubmitButton" id="_ctl1_SearchBox1_SubmitButton" type="button" value="Go" class="gdnbutton" onClick="goSearch_ctl1_SearchBox1();" />
+</td></tr></table>
+
+
+
+<script language="Javascript">
+
+function goSearch_ctl1_SearchBox1()
+{
+	var text = document.forms[0]._ctl1_SearchBox1_TextBoxQuery.value;
+	window.location.href = "/Search/Search.aspx?query=" + escape(text);
+}
+
+function SubmitSearch_ctl1_SearchBox1() 
+{	
+	if (event.keyCode == 13)
+	{
+		document.forms[0].onsubmit = onSubmitSearch;
+		goSearch_ctl1_SearchBox1();
+	}
+}
+
+function onSubmitSearch()
+{
+	return false;
+}
+
+</script><img src="/images/1pix.gif" width="26" height="1" alt="" border="0"></td>
+								<td width="30"><img src="/images/1pix.gif" width="30" height="1"></td>
+								<td><nobr><span id="_ctl1_PassportLabel" style="font-family:Verdana;font-size:8pt;"><A HREF="http://www.gotdotnet.com/team/windowsforms/Default.aspx?msppchlg=1&mspplogin=http://login.passport.com/login.srf%3Flc%3D1033%26id%3D3086%26ru%3Dhttp%253a%252f%252fwww.gotdotnet.com%252fteam%252fwindowsforms%252fDefault.aspx%26tw%3D0%26kv%3D1%26ct%3D1048259153%26cb%3D%26ver%3D2.0.253.1%26tpf%3D46cf08b856387cbc8e15f6009a48456a"><IMG SRC="http://www.passportimages.com/1033/signin.gif" CLASS="PassportSignIn" BORDER="0" ALT="Sign in with your Passport."/></A><!--PassportLogoGeneratedTime: 3/21/2003 7:05:53 AM--></span><img src="/images/1pix.gif" width="7" height="1" alt="" border="0"></nobr></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="38" align="right" background="/images/1pix.gif"><img src="/images/topbar_title.gif" width="323" height="38" alt="" border="0"><img src="/images/1pix.gif" width="67" height="1" alt="" border="0"></td>
+				</tr>
+			</table>
+		</td>
+</tr>
+
+	<tr>
+		<td valign="top" height="100%">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+				<tr>
+					<td id="_ctl1_LeftNavigation" valign="top" width="190" background="/images/left_bg.gif"><div id="_ctl1_RightNavigationMenu_Menu">
+	
+	
+			<TABLE cellSpacing="0" cellPadding="0" border="0" width="190">
+			<tr>
+				<td class="lnav_bg">
+					<img src="/images/leftnav_top_new.gif" height="2" width="190"><br>
+					<a id="_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionArrowLink" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionPanel')"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl0_ArrowImage" hspace="0" src="/images/leftnav_arrowd_new.gif" align="Right" border="0" /></asp:Image></a>
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl0_HeaderCaptionColumn" class="lnav_header" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionPanel')"><span id="_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionHeaderCaption" class="lnav_headertext">GotDotNet Community</span><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+				</td><tr><td class="lnav_bg">
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionPanel" class="lnav_container" style="display:none;">
+														
+										
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl0_SubSectionRepeater__ctl0_SubSectionCaption" class="lnav_2ndheader">Features<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/community/messageboard/Home.aspx" class="rollovernav">Message Boards</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/resources/home.aspx" class="rollovernav">Resource Center</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/user/directory.aspx" class="rollovernav">User Directory</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/usersamples/" class="rollovernav">User Samples</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/workspaces/" class="rollovernav">Workspaces</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl0_SubSectionRepeater__ctl1_SubSectionCaption" class="lnav_2ndheader">Affiliated Communities<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/content/codewise/" class="rollovernav">Code Wise Community</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/student/" class="rollovernav">GotDotNet Student</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/terrarium/" class="rollovernav">Terrarium</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+																														
+					
+	</div>
+					<img src="/images/leftnav_bottom_new.gif" width="190" height="11" alt="" border="0"></td>	
+			</tr>
+			</table>
+		
+			<TABLE cellSpacing="0" cellPadding="0" border="0" width="190">
+			<tr>
+				<td class="lnav_bg">
+					<img src="/images/leftnav_top_new.gif" height="2" width="190"><br>
+					<a id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionArrowLink" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionPanel')"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl1_ArrowImage" hspace="0" src="/images/leftnav_arrowd_new.gif" align="Right" border="0" /></asp:Image></a>
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl1_HeaderCaptionColumn" class="lnav_header" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionPanel')"><span id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionHeaderCaption" class="lnav_headertext">.NET Framework Technologies</span><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+				</td><tr><td class="lnav_bg">
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionPanel" class="lnav_container" style="display:none;">
+														
+										
+									
+										
+												<div class="lnav_links"><a href="/team/" class="rollovernav">Meet the<br>Technology Makers</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl1_SubSectionCaption" class="lnav_2ndheader">Core<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/team/entservers/" class="rollovernav">.NET Enterprise Servers</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/framework/default.aspx" class="rollovernav">.NET Framework</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/clr/about_security.aspx" class="rollovernav">.NET Framework Security</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="http://www.asp.net" class="rollovernav">ASP.NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl1_SectionItemsRepeater__ctl3_ExternalImage" align="middle" border="0" src="/images/gdn_icon_leaving.gif" border="0" /></div>
+											
+												<div class="lnav_links"><a href="/team/clr/about_clr.aspx" class="rollovernav">Common Language Runtime</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/windowsforms/" class="rollovernav">Windows Forms</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/vfp/" class="rollovernav">Visual FoxPro with .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="http://msdn.microsoft.com/vstudio/default.asp" class="rollovernav">Visual Studio .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl1_SectionItemsRepeater__ctl7_ExternalImage" align="middle" border="0" src="/images/gdn_icon_leaving.gif" border="0" /></div>
+											
+												<div class="lnav_links"><a href="/team/XMLwebservices/default.aspx" class="rollovernav">XML Web Services</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl2_SubSectionCaption" class="lnav_2ndheader">Languages<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/team/jscript/" class="rollovernav">JScript .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/vb/" class="rollovernav">Visual Basic .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/csharp/" class="rollovernav">Visual C# .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/cplusplus/" class="rollovernav">Visual C++ .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/vjsharp/" class="rollovernav">Visual J# .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl3_SubSectionCaption" class="lnav_2ndheader">Devices<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/team/netcf/" class="rollovernav">.NET Compact Framework</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="http://www.asp.net/mobile/" class="rollovernav">Mobile Internet<br>Toolkit</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl3_SectionItemsRepeater__ctl1_ExternalImage" align="middle" border="0" src="/images/gdn_icon_leaving.gif" border="0" /></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl4_SubSectionCaption" class="lnav_2ndheader">Competitive Technologies<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/team/java/" class="rollovernav">.NET Framework and Java</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+																														
+					
+	</div>
+					<img src="/images/leftnav_bottom_new.gif" width="190" height="11" alt="" border="0"></td>	
+			</tr>
+			</table>
+		
+			<TABLE cellSpacing="0" cellPadding="0" border="0" width="190">
+			<tr>
+				<td class="lnav_bg">
+					<img src="/images/leftnav_top_new.gif" height="2" width="190"><br>
+					<a id="_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionArrowLink" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionPanel')"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl2_ArrowImage" hspace="0" src="/images/leftnav_arrowd_new.gif" align="Right" border="0" /></asp:Image></a>
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl2_HeaderCaptionColumn" class="lnav_header" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionPanel')"><span id="_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionHeaderCaption" class="lnav_headertext">.NET Downloads</span><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+				</td><tr><td class="lnav_bg">
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionPanel" class="lnav_container" style="display:none;">
+														
+										
+									
+										
+												<div class="lnav_links"><a href="/team/changeinfo/default.aspx" class="rollovernav">Breaking Changes</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/upgrade/default.aspx" class="rollovernav">Upgrading to .NET Framework</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="http://msdn.microsoft.com/downloads/default.asp?URL=/code/sample.asp?url=/msdn-files/027/000/976/msdncompositedoc.xml" class="rollovernav">.NET Framework SDK</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl2_SubSectionRepeater__ctl0_SectionItemsRepeater__ctl2_ExternalImage" align="middle" border="0" src="/images/gdn_icon_leaving.gif" border="0" /></div>
+											
+												<div class="lnav_links"><a href="http://msdn.microsoft.com/downloads/default.asp?url=/downloads/sample.asp?url=/msdn-files/027/001/829/msdncompositedoc.xml" class="rollovernav">.NET Framework<br> Redist</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl2_SubSectionRepeater__ctl0_SectionItemsRepeater__ctl3_ExternalImage" align="middle" border="0" src="/images/gdn_icon_leaving.gif" border="0" /></div>
+											
+												<div class="lnav_links"><a href="http://msdn.microsoft.com/vstudio/downloads/default.asp" class="rollovernav">Visual Studio .NET</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl2_SubSectionRepeater__ctl0_SectionItemsRepeater__ctl4_ExternalImage" align="middle" border="0" src="/images/gdn_icon_leaving.gif" border="0" /></div>
+											
+																														
+					
+	</div>
+					<img src="/images/leftnav_bottom_new.gif" width="190" height="11" alt="" border="0"></td>	
+			</tr>
+			</table>
+		
+			<TABLE cellSpacing="0" cellPadding="0" border="0" width="190">
+			<tr>
+				<td class="lnav_bg">
+					<img src="/images/leftnav_top_new.gif" height="2" width="190"><br>
+					<a id="_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionArrowLink" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionPanel')"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl3_ArrowImage" hspace="0" src="/images/leftnav_arrowd_new.gif" align="Right" border="0" /></asp:Image></a>
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl3_HeaderCaptionColumn" class="lnav_header" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionPanel')"><span id="_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionHeaderCaption" class="lnav_headertext">Toolbox</span><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+				</td><tr><td class="lnav_bg">
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionPanel" class="lnav_container" style="display:none;">
+														
+										
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl3_SubSectionRepeater__ctl0_SubSectionCaption" class="lnav_2ndheader">Tutorials<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/quickstart/" class="rollovernav">.NET Framework<br> QuickStart Tutorials</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl3_SubSectionRepeater__ctl1_SubSectionCaption" class="lnav_2ndheader">Samples<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/team/netcf/askdotnet/" class="rollovernav">AskDotNet</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/terrarium/" class="rollovernav">Terrarium</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/Community/UserSamples/" class="rollovernav">User Samples</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+											
+									<div id="_ctl1_RightNavigationMenu_MenuSections__ctl3_SubSectionRepeater__ctl2_SubSectionCaption" class="lnav_2ndheader">Tools<img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+										
+												<div class="lnav_links"><a href="/team/libraries" class="rollovernav">FxCop</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/tools/web_svc/default.aspx" class="rollovernav">Web Service Tools</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/team/xmltools/" class="rollovernav">XML Tools</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+																														
+					
+	</div>
+					<img src="/images/leftnav_bottom_new.gif" width="190" height="11" alt="" border="0"></td>	
+			</tr>
+			</table>
+		
+			<TABLE cellSpacing="0" cellPadding="0" border="0" width="190">
+			<tr>
+				<td class="lnav_bg">
+					<img src="/images/leftnav_top_new.gif" height="2" width="190"><br>
+					<a id="_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionArrowLink" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionPanel')"><img id="_ctl1_RightNavigationMenu_MenuSections__ctl4_ArrowImage" hspace="0" src="/images/leftnav_arrowd_new.gif" align="Right" border="0" /></asp:Image></a>
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl4_HeaderCaptionColumn" class="lnav_header" onClick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionPanel')"><span id="_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionHeaderCaption" class="lnav_headertext">My GotDotNet</span><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+				</td><tr><td class="lnav_bg">
+					<div id="_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionPanel" class="lnav_container" style="display:none;">
+														
+										
+									
+										
+												<div class="lnav_links"><a href="/Community/MessageBoard/ManageSubscription.aspx" class="rollovernav">Manage Message Board Subscriptions</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/user/viewprofile.aspx#samples" class="rollovernav">Manage My Samples</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/user/viewprofile.aspx" class="rollovernav">My Profile</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+												<div class="lnav_links"><a href="/community/workspaces/WorkspacesConsole.aspx" class="rollovernav">My Workspaces</a><img src="/images/1pix.GIF" width="5" height="1" alt="" border="0"></div>
+											
+																														
+					
+	</div>
+					<img src="/images/leftnav_bottom_new.gif" width="190" height="11" alt="" border="0"></td>	
+			</tr>
+			</table>
+		
+<script id="_ctl1_RightNavigationMenu_SetupScript" language="JavaScript">
+<!--
+	var sectionCount = 5;
+	var menuCookieName = "GenericPageMenu";
+	var menuClientId = "_ctl1_RightNavigationMenu_Menu";
+	var menuId = "Menu";
+	var arrowDown = new Image();
+	arrowDown.src = "/images/leftnav_arrowu_new.gif";
+	var arrowRight = new Image();
+	arrowRight.src = "/images/leftnav_arrowd_new.gif";
+
+--></script>
+</div>			
+
+<IMG height="63" src="/images/nav_footer.gif" width="190" border="0">
+<span id="_ctl1_RightNavigationMenu_MainScriptLabel">
+<script language="JavaScript" src="/UI/Components/Navigation/Menu/Menu.js"></script>
+</span>
+
+
+</td>
+
+					<TD vAlign="top" width="100%" bgcolor="#FFFFFF">
+						<span>
+							<span id="_ctl1_PageTitleLabel" style="color:#000042;font-size:Medium;font-weight:bold;">About Windows Forms</span></span><br>
+						<br>
+<!-- 207.46.248.8 207.46.248.125 -->
+		<!-- Begin Content -->
+
+
+
+
+<b>Windows Forms</b> is a rich programming framework for building Win32 client applications.
+ 	It offers great support for Win32 developers, providing improved ease-of-use, superb tool support, 
+  	rock solid reliability, much lower deployment costs and associated reductions in total cost of ownership.
+
+
+<h4>Get Answers</h4>
+Stumped by a development problem?  Don't like the feel of an API?  Let the experts know.  The Windows Forms team will be available on the following Microsoft public newsgroup:
+<a href="news://msnews.microsoft.com/microsoft.public.dotnet.framework.windowsforms">dotnet.framework.windowsforms</A>
+<p>
+Also look for us on the <a href="http://www.asplists.com/asplists/winforms.asp">ASPlists Windows Forms lists</A> <img src="/images/leaving_gdn.gif"><br> 
+
+
+
+<h4>Code Heroes</h4>
+<a href="WindowsFormsCodingHero3_07_02.aspx"><b>Windows Forms Coding Heroes</b></a>  <img src="/images/new_gdn.gif"><BR>
+Kenny Kerr works over icons and unmanged inter-op.<br>
+3/07/02
+<p>
+<a href="WindowsFormsCodingHeroes.aspx"><b>More Code Heroes...</b></A>
+
+	
+
+<h4> Features </h4>
+<a href="appupdater.aspx"><b>.Net Application Updater Component</b></A>  <img src="/images/new_gdn.gif"><br>
+Want to make your application smart enough to update itself?  This article describes how to do just that.  The .NET Application Updater component included with this article is the same one used to make the .Net Terrarium game automatically updatable.  
+<BR>
+<FONT SIZE="-1"><I>by Jamie Cool<br>
+Program Manager - Microsoft .NET Framework</I></FONT>
+<p>
+
+<a href="gdiptext.aspx"><b>GDI+ Text, Resolution Independence, and Rendering Methods</b></A>  <img src="/images/new_gdn.gif"><br>
+<FONT SIZE="-1"><I>by David C. Brown<br>
+Lead Developer - GDI+</I></FONT>
+<p>
+
+<a href="Themes.aspx"><b>Using Windows XP Themed Controls in Windows Forms</b></A>  <img src="/images/new_gdn.gif"><br>
+<FONT SIZE="-1"><I>by Mike Harsh<br>
+Program Manager - Microsoft .NET Framework</I></FONT>
+<p>
+
+<a href="Licensing.aspx"><b>.NET Licensing</b></A>  <img src="/images/new_gdn.gif"><br>
+<FONT SIZE="-1"><I>by Mike Harsh<br>
+Program Manager - Microsoft .NET Framework</I></FONT>
+<p>
+
+<a href="customlayoutengines.aspx"><b>Providing Custom Layout Engines for Windows Forms</b></A>  <img src="/images/new_gdn.gif"><br>
+<FONT SIZE="-1"><I>by Chris Anderson<br>
+Developer - Microsoft .NET Framework</I></FONT>
+<p>
+
+<a href="WindowsFormsFeatures.aspx"><b>More Features...</b></A>
+
+
+<h4> Articles </h4>
+<a href="http://www.msdn.microsoft.com/library/default.asp?url=/library/en-us/dndotnet/html/custdsgnrdotnet.asp"><b>Writing Custom Designers for .NET Components</b></A> <img src="/images/new_gdn.gif">&nbsp<img src="/images/leaving_gdn.gif"> <br>
+<FONT SIZE="-1"><I>by Shawn Burke</I></FONT>
+<p>
+ 
+<a href="http://msdn.microsoft.com/msdnmag/issues/01/02/winforms/winforms.asp"><b>Windows Forms: A Modern-Day Programming Model for Writing GUI Applications</b></A> <img src="/images/leaving_gdn.gif"><br>
+<FONT SIZE="-1"><I>by Jeff Prosise</I></FONT>
+<p>
+
+<a href="WindowsFormsArticles.aspx"><b>More Articles...</b></A> 
+
+                       
+
+
+
+
+
+
+		<!-- End Content -->	
+		<span id="_ctl2_BottomNavigation"></span><br clear="all">
+<a id="_ctl2_PrintVersionBottomButton" href="javascript:__doPostBack('_ctl2:PrintVersionBottomButton','')" style="font-size:7pt;font-style:italic;">[Printer friendly version]</a>
+<HR color="#3399ff" size="1">
+<span style="FONT-SIZE: xx-small; FONT-FAMILY: verdana">
+	<span id="_ctl2_CopyRightLabel">© Copyright 2003 Microsoft Corporation. All Rights Reserved.</span><br>
+	<a id="_ctl2_TermsOfUseLink" href="/content/legal/tou.aspx">Terms of Use</a>
+	|
+	<a id="_ctl2_PrivacyStatement" href="/content/legal/privacy.aspx">Privacy Statement</a>
+	|
+	<a id="_ctl2_CodeOfConduct" href="/content/legal/conduct.aspx">Code of Conduct</a>
+	|
+	<a id="_ctl2_MeetTeam" href="/team/gdnteam.aspx">About the team</a>
+	|
+	<a id="_ctl2_ContactUs" href="/utility/feedback/feedback.aspx">Contact Us</a>
+	<p>
+</span></TD>
+<TD id="_ctl2_MiddleRightColumn" style="background-color: #FFFFFF; background-image: url(/images/rnav_bg.gif); background-repeat: repeat-y; background-position: right;" valign="top"><span id="_ctl2_RightNavigation"></span><img src="/images/1pix.gif" width="63" height="1" alt="" border="0"></TD>
+
+</tr> </table> </td> </tr>
+<tr id="_ctl2_BottomRow">
+	<td background="/images/footer_bg.gif" style="padding:0;">
+		<img src="/images/footer_r.gif" width="43" hspace="0" height="28" alt="" border="0" align="right">
+		<img src="/images/footer_l.gif" width="61" height="28" alt="" border="0"></td>
+</tr>
+
+</table>
+</form>
+</body></html>

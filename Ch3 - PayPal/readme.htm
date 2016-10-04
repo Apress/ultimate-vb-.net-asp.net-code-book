@@ -1,0 +1,194 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>How to Implement PayPal IPN Techniques</title>
+</head>
+
+<body>
+
+<form id="TipsAndTricksDetails" name="TipsAndTricksDetails" action="http://www.bluevisionsoftware.com/WebSite/TipsAndTricksDetails.aspx?Name=PayPal" method="post">
+  <table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+    <tr height="100%">
+      <td vAlign="top" align="left">
+      <table borderColor="#6699ff" height="100%" cellSpacing="0" cellPadding="0" width="100%" border="1">
+        <tr>
+          <td vAlign="top" align="left" width="100%">
+          <table style="padding-left: 20px; padding-right: 20px" height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+            <tr height="100%">
+              <td vAlign="top">
+              <div id="_pagePanel" style="width: 100%; height: 100%">
+                <span style="font-weight: bold; font-size: 16pt; font-family: Verdana">
+                <br>
+                Implement PayPal's Instant Payment Notification IPN with .NET</span><br>
+&nbsp;<meta content="False" name="vs_showGrid"><meta content="Microsoft Visual Studio 7.0" name="GENERATOR"><meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema"><p>
+                PayPal's Instant Payment Notification (IPN) allows you to 
+                program your back-end operations to automate transactions when 
+                you receive payments from your customers. As of this initial 
+                writing, no samples on the entire searchable Internet have 
+                illustrated how this simple task can be done with the .NET 
+                Framework. If you are already familiar with the background of 
+                PayPal, then <a href="#PostingBack">jump right to the .NET code</a>.</p>
+                <p><font face="Arial"><strong>Background</strong></font></p>
+                <p>Whenever purchases are made through PayPal by a customer, 
+                PayPal uses IPN to post the transaction information to a 
+                resource that you specify:</p>
+                <p><em>Example (Fake Url):
+                <a href="https://www.myserver.com/PayPal/PaymentNotification.aspx">
+                https://www.myserver.com/PayPal/PaymentNotification.aspx</a></em></p>
+                <p>Once your resource receives the post, you must complete 4 
+                steps:</p>
+                <ol>
+                  <li><strong>Notification Validation</strong> <br>
+                  In this step, your job is to post the data that was posted to 
+                  you back to PayPal. This ensures that the original post indeed 
+                  came from PayPal, and is not sort of fraud. In the data that 
+                  you post back, you must append the &quot;cmd=_notify-validate&quot; 
+                  value to the POST string. Once the data is posted back to 
+                  PayPal, PayPal will respond with a string of either &quot;VERIFIED&quot; 
+                  or &quot;INVALID&quot;. &quot;VERIFIED&quot; means that PayPal sent the original 
+                  post, and that you should continue your automation process as 
+                  part of the transaction. &quot;INVALID&quot; means that PayPal did not 
+                  send the original post, and it should probably belogged and 
+                  investigated for possible fraud. <br>
+&nbsp;</li>
+                  <li><strong>Payment Status Check</strong> <br>
+                  In this step, you should check that the &quot;payment_status&quot; form 
+                  field is &quot;Completed&quot;. This ensures that the customer's payment 
+                  has been processed by PayPal, and it has been added to the 
+                  seller's account. <br>
+&nbsp;</li>
+                  <li><strong>Transaction Duplication Check</strong> <br>
+                  In this step, you should check that the &quot;txn_id&quot; form field, 
+                  transaction ID,&nbsp;has not already been processed by your 
+                  automation system. A good thing to do is to store the 
+                  transaction ID in a database or file for duplication checking. 
+                  If the transaction ID posted by PayPal is a duplicate, you 
+                  should not continue your automation process for this 
+                  transaction. Otherwise, this could result in sending the same 
+                  product to a customer twice. <br>
+&nbsp;</li>
+                  <li><strong>Seller Email Validation</strong> <br>
+                  In this step, you simply make sure that the transaction is for 
+                  your account. Your account will have specific email addresses 
+                  assigned to it. You should verify that the &quot;receiver_email&quot; 
+                  field has a value that corresponds to an email associated with 
+                  your account. <br>
+&nbsp;</li>
+                  <li><strong>Payment Validation</strong> <br>
+                  As of now, this step is not listed on other sites as a 
+                  requirement, but it is very important. Because any 
+                  customer&nbsp;who is familiar with query strings can modify the 
+                  cost of a seller's product, you should verify that the &quot;payment_gross&quot; 
+                  field corresponds with the actual price of the item that the 
+                  customer is purchasing. It is up to you to determine the exact 
+                  price of the item the customer is purchasing using the form 
+                  fields. Some common fields you may use to lookup the&nbsp;item 
+                  being purchased include &quot;item_name&quot; and &quot;item_number&quot;. To see 
+                  for yourself, follow these steps: </li>
+                </ol>
+                <ul>
+                  <li>Click on a button used to purchase one of your products.
+                  </li>
+                  <li>Locate the &quot;payment_gross&quot; field in the query string and 
+                  change its value. </li>
+                  <li>Use the changed URL and perform a re-request, typically by 
+                  hitting [ENTER] in the browser Address Bar. </li>
+                  <li>Notice the changed price for your product on the PayPal 
+                  order page.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <p><font face="Arial"><strong>Posting Back with&nbsp;.NET</strong></font></p>
+                <pre><font color="blue">public class</font> PaymentNotification : System.Web.UI.Page
+{
+  <font color="green">// This helper method encodes a string correctly for an HTTP POST</font>
+  <font color="blue">private</font> <font color="blue">string</font> Encode(<font color="blue">string</font> oldValue)
+  {
+    <font color="blue">string</font> newValue = oldValue.Replace(&quot;\&quot;&quot;, &quot;'&quot;);
+    newValue = System.Web.HttpUtility.UrlEncode(newValue);
+    newValue = newValue.Replace(&quot;%2f&quot;, &quot;/&quot;);
+    <font color="blue">return</font> newValue;
+  }
+  
+  <font color="blue">private</font> <font color="blue">void</font> Page_Load(<font color="blue">object</font> sender, System.EventArgs e)
+  {
+    <font color="green">// Step 1a: Modify the POST string.</font>
+    <font color="blue">string</font> formPostData = &quot;cmd = _notify-validate&quot;;
+    <font color="blue">foreach</font> (String postKey in Request.Form)
+    {
+      <font color="blue">string</font> postValue = Encode(Request.Form[postKey]);
+      formPostData += <font color="blue">string</font>.Format(&quot;&amp;{0}={1}&quot;, postKey, postValue);
+    }
+    
+    <font color="green">// Step 1b: POST the data back to PayPal.</font>
+    WebClient client = <font color="blue">new</font> WebClient();
+    client.Headers.Add(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);
+    <font color="blue">byte</font>[] postByteArray = Encoding.ASCII.GetBytes(formPostData);
+    <font color="blue">byte</font>[] responseArray = client.UploadData(&quot;https://www.paypal.com/cgi-bin/webscr&quot;, &quot;POST&quot;, postByteArray);
+    <font color="blue">string</font> response = Encoding.ASCII.GetString(responseArray);
+    
+    <font color="green">// Step 1c: Process the response from PayPal.</font>
+    <font color="blue">switch </font>(response)
+    {
+      <font color="blue">case</font> &quot;VERIFIED&quot;:
+      {
+        <font color="green">// Perform steps 2-5 above. 
+        // Continue with automation processing if all steps succeeded.</font>
+        <font color="blue">break</font>
+        ;
+      }
+      <font color="blue">default</font>:
+      {
+        <font color="green">// Possible fraud. Log for investigation.</font>
+        <font color="blue">break</font>;
+      }
+    }
+  }
+}
+		<font size="2" face="Arial"><font color="#0000ff" size="2">
+</font>
+		</pre>
+                </font>
+                <p><font face="Arial"><strong>Posting Back With COM and 
+                IXmlHttpRequest</strong></font></p>
+                <p>And for the .NET developers who still want to use COM and 
+                IXmlHttpRequest, here is the equivalent code for Step 1b:</p>
+                <pre>    <font color="blue">object</font> msxml = Server.CreateObject(&quot;Msxml2.XMLHTTP&quot;);
+    Type type = msxml.GetType();
+    <font color="blue">object</font>[] args = {&quot;POST&quot;, &quot;https://www.paypal.com/cgi-bin/webscr&quot;, <font color="blue">false</font>};
+    <font color="blue">object</font>[] args2 = {formPostData};
+    type.InvokeMember(&quot;Open&quot;, System.Reflection.BindingFlags.InvokeMethod, <font color="blue">null</font>, msxml, args);
+    type.InvokeMember(&quot;Send&quot;, System.Reflection.BindingFlags.InvokeMethod, <font color="blue">null</font>, msxml, args2);
+    object responseObj = type.InvokeMember(&quot;responseText&quot;, 
+	                                   System.Reflection.BindingFlags.GetProperty, 
+	                                   <font color="blue">null</font>, 
+	                                   msxml, 
+	                                   <font color="blue">null</font>);
+    <font color="blue">string</font> response = (<font color="blue">string</font>) responseObj;
+			</pre>
+                <p><br>
+                When using&nbsp;<strong>Server.CreateObject</strong> in ASP.NET, 
+                however, you must add <b>aspcompat=true</b> to the Page 
+                directive, as shown:<br>
+                <br>
+                <span style="width: 100%; font-family: 'Courier New', Mono; background-color: yellow">
+                &lt;%@ Page aspcompat=true language=&quot;c#&quot; Codebehind=&quot;PaymentNotification.aspx.cs&quot; 
+                AutoEventWireup=&quot;false&quot; Inherits=&quot;PaymentNotification&quot; %&gt; </span>
+                <br>
+&nbsp;</div>
+              </td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+
+</html>

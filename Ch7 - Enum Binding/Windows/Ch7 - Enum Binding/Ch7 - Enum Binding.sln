@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch7 - Enum Binding", "Ch7 - Enum Binding.vbproj", "{7FBF482C-DAF3-4FA1-8FEA-D5FDFCD42CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7FBF482C-DAF3-4FA1-8FEA-D5FDFCD42CFA}.Debug.ActiveCfg = Debug|.NET
+		{7FBF482C-DAF3-4FA1-8FEA-D5FDFCD42CFA}.Debug.Build.0 = Debug|.NET
+		{7FBF482C-DAF3-4FA1-8FEA-D5FDFCD42CFA}.Release.ActiveCfg = Release|.NET
+		{7FBF482C-DAF3-4FA1-8FEA-D5FDFCD42CFA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

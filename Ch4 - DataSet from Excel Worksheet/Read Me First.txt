@@ -1,0 +1,12 @@
+Note!
+======
+
+This is a Web project and therefore will require a little setting up before it will work properly.
+
+ * In Windows Explorer, right-click on this project folder and select Properites
+
+ * Select the Web Sharing tab and click 'Share the folder'
+
+ * Stick with the default folder name, then click OK
+
+ * Double-click on the solution inside the folder (the .SLN file) to open in Visual Studio .NET!

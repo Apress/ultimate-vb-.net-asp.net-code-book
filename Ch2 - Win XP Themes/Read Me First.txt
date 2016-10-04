@@ -1,0 +1,8 @@
+Important Note
+===============
+
+Run the .EXE in the /Bin directory first to view the Windows XP themed application.
+
+Opening in Visual Studio .NET and running the application will overwrite this .EXE and the changes made to it from steps four onward in the book.
+
+Remember: each time you overwrite the file, you will need to follow steps four onwards, altering the XML file to match the latest version number.

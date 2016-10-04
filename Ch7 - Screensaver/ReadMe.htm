@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>ReadMe</title>
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+		<meta name="ProgId" content="FrontPage.Editor.Document">
+		<meta name="Originator" content="Microsoft Visual Studio.NET 7.0">
+	</head>
+	<body>
+		<H1>Advanced .NET Framework (GDI+):&nbsp;Creating a Screen Saver with GDI+</H1>
+		<P>This sample shows some how&nbsp;to create a screen saver using Visual Basic.NET.
+		</P>
+		<H2>Feature Highlights:</H2>
+		<P>
+			This how-to demonstrates many of the important features of creating screen 
+			savers that can be automated by Windows. Concepts demonstrated are:</P>
+		<UL>
+			<LI>
+			Creating a screen saver to fill the screen with a single form, and draw images 
+			to the form.
+			<LI>
+			Setting up an Options file, to store user defined options that guide how the 
+			screen saver runs.
+			<LI>
+				React to mouse&nbsp;and keyboard events to close the screen saver.</LI></UL>
+		<P>The screen saver preview functionality is not demonstrated, since it involves 
+			several advanced threading issues.</P>
+		<H2>Requirements:</H2>
+		Microsoft Visual Studio .NET Professional (or greater).<br>
+        Windows 2000 or Windows XP.<H2>Running the Sample:</H2>
+		<P>To run the sample:
+		</P>
+		<OL>
+			<LI>
+				Doubleclick the <STRONG>VB.NET How-To&nbsp;Creating a Screensaver using GDI+.sln</STRONG>
+			file.&nbsp;
+			<LI>
+			Click the "Install" button on the main form to copy the screen saver to the 
+			Windows system folder.
+			<LI>
+				Go into your display settings, and set the screen saver as <STRONG>VB.NET How-To 
+					Screen Saver</STRONG>.
+			<LI>
+			Test the screensaver.
+			<LI>
+				Explore the <STRONG>VB.NET How-To Screen Saver Project </STRONG>project for an 
+				example of creating your own screen saver.
+			</LI>
+		</OL>
+		<H3>Notes:</H3>
+		<P>When you compile your own screen saver, there are several things to keep in 
+			mind.&nbsp; First, be sure to set the following Form Properties:
+		</P>
+		<UL>
+			<LI>
+			FormBorderStyle = None
+			<LI>
+			WindowState = Maximized
+			<LI>
+			MaximizeBox = False
+			<LI>
+			MinimizeBox = False
+			<LI>
+				ShowInTaskbar = False</LI></UL>
+		<P>Also, before you can use a newly compiled screen saver, you must change its 
+			extension from .EXE to .SCR, and copy it to the Windows system directory (by 
+			default, in WinXP this is "C:\Windows\System32").</P>
+		<H3>See Also:</H3>
+		<P><A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemDrawing.asp">System.Drawing</A>,
+			<A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemDrawingGraphicsClassTopic.asp">
+				System.Drawing.Graphics</A></P>
+	</body>
+</html>

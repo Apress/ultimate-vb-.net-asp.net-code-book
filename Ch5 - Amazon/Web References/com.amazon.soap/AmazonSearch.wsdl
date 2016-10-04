@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="urn:PI/DevCentral/SoapService" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="urn:PI/DevCentral/SoapService" name="AmazonSearch" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema targetNamespace="urn:PI/DevCentral/SoapService">
+      <s:complexType name="ProductInfo">
+        <s:all>
+          <s:element name="TotalResults" type="s:string" />
+          <s:element name="ListName" type="s:string" />
+          <s:element name="Details" type="s0:DetailsArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="DetailsArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:Details[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Details">
+        <s:all>
+          <s:element name="Url" type="s:string" />
+          <s:element name="Asin" type="s:string" />
+          <s:element name="ProductName" type="s:string" />
+          <s:element name="Catalog" type="s:string" />
+          <s:element name="KeyPhrases" type="s0:KeyPhraseArray" />
+          <s:element name="Artists" type="s0:ArtistArray" />
+          <s:element name="Authors" type="s0:AuthorArray" />
+          <s:element name="Mpn" type="s:string" />
+          <s:element name="Starring" type="s0:StarringArray" />
+          <s:element name="Directors" type="s0:DirectorArray" />
+          <s:element name="TheatricalReleaseDate" type="s:string" />
+          <s:element name="ReleaseDate" type="s:string" />
+          <s:element name="Manufacturer" type="s:string" />
+          <s:element name="Distributor" type="s:string" />
+          <s:element name="ImageUrlSmall" type="s:string" />
+          <s:element name="ImageUrlMedium" type="s:string" />
+          <s:element name="ImageUrlLarge" type="s:string" />
+          <s:element name="ListPrice" type="s:string" />
+          <s:element name="OurPrice" type="s:string" />
+          <s:element name="UsedPrice" type="s:string" />
+          <s:element name="RefurbishedPrice" type="s:string" />
+          <s:element name="CollectiblePrice" type="s:string" />
+          <s:element name="ThirdPartyNewPrice" type="s:string" />
+          <s:element name="NumberOfOfferings" type="s:string" />
+          <s:element name="ThirdPartyNewCount" type="s:string" />
+          <s:element name="UsedCount" type="s:string" />
+          <s:element name="CollectibleCount" type="s:string" />
+          <s:element name="RefurbishedCount" type="s:string" />
+          <s:element name="ThirdPartyProductInfo" type="s0:ThirdPartyProductInfo" />
+          <s:element name="SalesRank" type="s:string" />
+          <s:element name="BrowseList" type="s0:BrowseNodeArray" />
+          <s:element name="Media" type="s:string" />
+          <s:element name="ReadingLevel" type="s:string" />
+          <s:element name="Publisher" type="s:string" />
+          <s:element name="NumMedia" type="s:string" />
+          <s:element name="Isbn" type="s:string" />
+          <s:element name="Features" type="s0:FeaturesArray" />
+          <s:element name="MpaaRating" type="s:string" />
+          <s:element name="EsrbRating" type="s:string" />
+          <s:element name="AgeGroup" type="s:string" />
+          <s:element name="Availability" type="s:string" />
+          <s:element name="Upc" type="s:string" />
+          <s:element name="Tracks" type="s0:TrackArray" />
+          <s:element name="Accessories" type="s0:AccessoryArray" />
+          <s:element name="Platforms" type="s0:PlatformArray" />
+          <s:element name="Encoding" type="s:string" />
+          <s:element name="Reviews" type="s0:Reviews" />
+          <s:element name="SimilarProducts" type="s0:SimilarProductsArray" />
+          <s:element name="Lists" type="s0:ListArray" />
+          <s:element name="Status" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="KeyPhraseArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:KeyPhrase[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="KeyPhrase">
+        <s:all>
+          <s:element name="KeyPhrase" type="s:string" />
+          <s:element name="Type" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ArtistArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="AuthorArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="StarringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="DirectorArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BrowseNodeArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:BrowseNode[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BrowseNode">
+        <s:all>
+          <s:element name="BrowseId" type="s:string" />
+          <s:element name="BrowseName" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="FeaturesArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TrackArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:Track[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Track">
+        <s:all>
+          <s:element name="TrackName" type="s:string" />
+          <s:element name="ByArtist" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="AccessoryArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="PlatformArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Reviews">
+        <s:all>
+          <s:element name="AvgCustomerRating" type="s:string" />
+          <s:element name="CustomerReviews" type="s0:CustomerReviewArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="CustomerReviewArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:CustomerReview[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CustomerReview">
+        <s:all>
+          <s:element name="Rating" type="s:string" />
+          <s:element name="Summary" type="s:string" />
+          <s:element name="Comment" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SimilarProductsArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ListArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SellerProfile">
+        <s:all>
+          <s:element name="SellerProfileDetails" type="s0:SellerProfileDetailsArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerSearch">
+        <s:all>
+          <s:element name="SellerSearchDetails" type="s0:SellerSearchDetailsArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerProfileDetails">
+        <s:all>
+          <s:element name="SellerNickname" type="s:string" />
+          <s:element name="OverallFeedbackRating" type="s:string" />
+          <s:element name="NumberOfFeedback" type="s:string" />
+          <s:element name="NumberOfCanceledBids" type="s:string" />
+          <s:element name="NumberOfCanceledAuctions" type="s:string" />
+          <s:element name="StoreId" type="s:string" />
+          <s:element name="StoreName" type="s:string" />
+          <s:element name="SellerFeedback" type="s0:SellerFeedback" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerProfileDetailsArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:SellerProfileDetails[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SellerSearchDetails">
+        <s:all>
+          <s:element name="SellerNickname" type="s:string" />
+          <s:element name="StoreId" type="s:string" />
+          <s:element name="StoreName" type="s:string" />
+          <s:element name="NumberOfOpenListings" type="s:string" />
+          <s:element name="ListingProductInfo" type="s0:ListingProductInfo" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerSearchDetailsArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:SellerSearchDetails[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ListingProductInfo">
+        <s:all>
+          <s:element name="ListingProductDetails" type="s0:ListingProductDetailsArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ListingProductDetailsArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:ListingProductDetails[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ListingProductDetails">
+        <s:all>
+          <s:element name="ExchangeId" type="s:string" />
+          <s:element name="ListingId" type="s:string" />
+          <s:element name="ExchangeTitle" type="s:string" />
+          <s:element name="ExchangePrice" type="s:string" />
+          <s:element name="ExchangeAsin" type="s:string" />
+          <s:element name="ExchangeEndDate" type="s:string" />
+          <s:element name="ExchangeTinyImage" type="s:string" />
+          <s:element name="ExchangeSellerId" type="s:string" />
+          <s:element name="ExchangeSellerNickname" type="s:string" />
+          <s:element name="ExchangeStartDate" type="s:string" />
+          <s:element name="ExchangeStatus" type="s:string" />
+          <s:element name="ExchangeQuantity" type="s:string" />
+          <s:element name="ExchangeQuantityAllocated" type="s:string" />
+          <s:element name="ExchangeFeaturedCategory" type="s:string" />
+          <s:element name="ExchangeCondition" type="s:string" />
+          <s:element name="ExchangeConditionType" type="s:string" />
+          <s:element name="ExchangeAvailability" type="s:string" />
+          <s:element name="ExchangeOfferingType" type="s:string" />
+          <s:element name="ExchangeSellerState" type="s:string" />
+          <s:element name="ExchangeSellerCountry" type="s:string" />
+          <s:element name="ExchangeSellerRating" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerFeedback">
+        <s:all>
+          <s:element name="Feedback" type="s0:FeedbackArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="FeedbackArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:Feedback[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Feedback">
+        <s:all>
+          <s:element name="FeedbackRating" type="s:string" />
+          <s:element name="FeedbackComments" type="s:string" />
+          <s:element name="FeedbackDate" type="s:string" />
+          <s:element name="FeedbackRater" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ThirdPartyProductInfo">
+        <s:all>
+          <s:element name="ThirdPartyProductDetails" type="s0:ThirdPartyProductDetailsArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ThirdPartyProductDetailsArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:ThirdPartyProductDetails[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ThirdPartyProductDetails">
+        <s:all>
+          <s:element name="OfferingType" type="s:string" />
+          <s:element name="SellerId" type="s:string" />
+          <s:element name="SellerNickname" type="s:string" />
+          <s:element name="ExchangeId" type="s:string" />
+          <s:element name="OfferingPrice" type="s:string" />
+          <s:element name="Condition" type="s:string" />
+          <s:element name="ConditionType" type="s:string" />
+          <s:element name="ExchangeAvailability" type="s:string" />
+          <s:element name="SellerCountry" type="s:string" />
+          <s:element name="SellerState" type="s:string" />
+          <s:element name="ShipComments" type="s:string" />
+          <s:element name="SellerRating" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="KeywordRequest">
+        <s:all>
+          <s:element name="keyword" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="PowerRequest">
+        <s:all>
+          <s:element name="power" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="BrowseNodeRequest">
+        <s:all>
+          <s:element name="browse_node" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="AsinRequest">
+        <s:all>
+          <s:element name="asin" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="offer" type="s:string" />
+          <s:element minOccurs="0" name="offerpage" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="UpcRequest">
+        <s:all>
+          <s:element name="upc" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ArtistRequest">
+        <s:all>
+          <s:element name="artist" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="AuthorRequest">
+        <s:all>
+          <s:element name="author" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ActorRequest">
+        <s:all>
+          <s:element name="actor" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="DirectorRequest">
+        <s:all>
+          <s:element name="director" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ExchangeRequest">
+        <s:all>
+          <s:element name="exchange_id" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ManufacturerRequest">
+        <s:all>
+          <s:element name="manufacturer" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="mode" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="sort" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ListManiaRequest">
+        <s:all>
+          <s:element name="lm_id" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="WishlistRequest">
+        <s:all>
+          <s:element name="wishlist_id" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerProfileRequest">
+        <s:all>
+          <s:element name="seller_id" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="page" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SellerRequest">
+        <s:all>
+          <s:element name="seller_id" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="offerstatus" type="s:string" />
+          <s:element name="page" type="s:string" />
+          <s:element minOccurs="0" name="seller_browse_id" type="s:string" />
+          <s:element minOccurs="0" name="keyword" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="SimilarityRequest">
+        <s:all>
+          <s:element name="asin" type="s:string" />
+          <s:element name="tag" type="s:string" />
+          <s:element name="type" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ItemIdArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s:string[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ItemArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:Item[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Item">
+        <s:all>
+          <s:element name="ItemId" type="s:string" />
+          <s:element name="ProductName" type="s:string" />
+          <s:element name="Catalog" type="s:string" />
+          <s:element minOccurs="0" name="Asin" type="s:string" />
+          <s:element minOccurs="0" name="ExchangeId" type="s:string" />
+          <s:element name="Quantity" type="s:string" />
+          <s:element minOccurs="0" name="ListPrice" type="s:string" />
+          <s:element name="OurPrice" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ItemQuantityArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:ItemQuantity[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ItemQuantity">
+        <s:all>
+          <s:element name="ItemId" type="s:string" />
+          <s:element name="Quantity" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="AddItemArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:attribute d7p1:arrayType="s0:AddItem[]" ref="soapenc:arrayType" xmlns:d7p1="http://schemas.xmlsoap.org/wsdl/" />
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="AddItem">
+        <s:all>
+          <s:element minOccurs="0" name="Asin" type="s:string" />
+          <s:element minOccurs="0" name="ExchangeId" type="s:string" />
+          <s:element name="Quantity" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ShoppingCart">
+        <s:all>
+          <s:element name="CartId" type="s:string" />
+          <s:element name="HMAC" type="s:string" />
+          <s:element name="PurchaseUrl" type="s:string" />
+          <s:element minOccurs="0" name="Items" type="s0:ItemArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="GetShoppingCartRequest">
+        <s:all>
+          <s:element name="tag" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="HMAC" type="s:string" />
+          <s:element name="CartId" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ClearShoppingCartRequest">
+        <s:all>
+          <s:element name="tag" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="CartId" type="s:string" />
+          <s:element name="HMAC" type="s:string" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="AddShoppingCartItemsRequest">
+        <s:all>
+          <s:element name="tag" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element minOccurs="0" name="CartId" type="s:string" />
+          <s:element minOccurs="0" name="HMAC" type="s:string" />
+          <s:element name="Items" type="s0:AddItemArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="RemoveShoppingCartItemsRequest">
+        <s:all>
+          <s:element name="tag" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="CartId" type="s:string" />
+          <s:element name="HMAC" type="s:string" />
+          <s:element name="Items" type="s0:ItemIdArray" />
+        </s:all>
+      </s:complexType>
+      <s:complexType name="ModifyShoppingCartItemsRequest">
+        <s:all>
+          <s:element name="tag" type="s:string" />
+          <s:element name="devtag" type="s:string" />
+          <s:element name="CartId" type="s:string" />
+          <s:element name="HMAC" type="s:string" />
+          <s:element name="Items" type="s0:ItemQuantityArray" />
+        </s:all>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="KeywordSearchRequest">
+    <part name="KeywordSearchRequest" type="s0:KeywordRequest" />
+  </message>
+  <message name="KeywordSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="PowerSearchRequest">
+    <part name="PowerSearchRequest" type="s0:PowerRequest" />
+  </message>
+  <message name="PowerSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="BrowseNodeSearchRequest">
+    <part name="BrowseNodeSearchRequest" type="s0:BrowseNodeRequest" />
+  </message>
+  <message name="BrowseNodeSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="AsinSearchRequest">
+    <part name="AsinSearchRequest" type="s0:AsinRequest" />
+  </message>
+  <message name="AsinSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="UpcSearchRequest">
+    <part name="UpcSearchRequest" type="s0:UpcRequest" />
+  </message>
+  <message name="UpcSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="AuthorSearchRequest">
+    <part name="AuthorSearchRequest" type="s0:AuthorRequest" />
+  </message>
+  <message name="AuthorSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="ArtistSearchRequest">
+    <part name="ArtistSearchRequest" type="s0:ArtistRequest" />
+  </message>
+  <message name="ArtistSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="ActorSearchRequest">
+    <part name="ActorSearchRequest" type="s0:ActorRequest" />
+  </message>
+  <message name="ActorSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="DirectorSearchRequest">
+    <part name="DirectorSearchRequest" type="s0:DirectorRequest" />
+  </message>
+  <message name="DirectorSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="ExchangeSearchRequest">
+    <part name="ExchangeSearchRequest" type="s0:ExchangeRequest" />
+  </message>
+  <message name="ExchangeSearchResponse">
+    <part name="return" type="s0:ListingProductDetails" />
+  </message>
+  <message name="ManufacturerSearchRequest">
+    <part name="ManufacturerSearchRequest" type="s0:ManufacturerRequest" />
+  </message>
+  <message name="ManufacturerSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="ListManiaSearchRequest">
+    <part name="ListManiaSearchRequest" type="s0:ListManiaRequest" />
+  </message>
+  <message name="ListManiaSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="WishlistSearchRequest">
+    <part name="WishlistSearchRequest" type="s0:WishlistRequest" />
+  </message>
+  <message name="WishlistSearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="SellerProfileSearchRequest">
+    <part name="SellerProfileSearchRequest" type="s0:SellerProfileRequest" />
+  </message>
+  <message name="SellerProfileSearchResponse">
+    <part name="return" type="s0:SellerProfile" />
+  </message>
+  <message name="SellerSearchRequest">
+    <part name="SellerSearchRequest" type="s0:SellerRequest" />
+  </message>
+  <message name="SellerSearchResponse">
+    <part name="return" type="s0:SellerSearch" />
+  </message>
+  <message name="SimilaritySearchRequest">
+    <part name="SimilaritySearchRequest" type="s0:SimilarityRequest" />
+  </message>
+  <message name="SimilaritySearchResponse">
+    <part name="return" type="s0:ProductInfo" />
+  </message>
+  <message name="GetShoppingCartRequest">
+    <part name="GetShoppingCartRequest" type="s0:GetShoppingCartRequest" />
+  </message>
+  <message name="ClearShoppingCartRequest">
+    <part name="ClearShoppingCartRequest" type="s0:ClearShoppingCartRequest" />
+  </message>
+  <message name="AddShoppingCartItemsRequest">
+    <part name="AddShoppingCartItemsRequest" type="s0:AddShoppingCartItemsRequest" />
+  </message>
+  <message name="RemoveShoppingCartItemsRequest">
+    <part name="RemoveShoppingCartItemsRequest" type="s0:RemoveShoppingCartItemsRequest" />
+  </message>
+  <message name="ModifyShoppingCartItemsRequest">
+    <part name="ModifyShoppingCartItemsRequest" type="s0:ModifyShoppingCartItemsRequest" />
+  </message>
+  <message name="ShoppingCartResponse">
+    <part name="ShoppingCart" type="s0:ShoppingCart" />
+  </message>
+  <portType name="AmazonSearchPort">
+    <operation name="KeywordSearchRequest">
+      <input message="s0:KeywordSearchRequest" />
+      <output message="s0:KeywordSearchResponse" />
+    </operation>
+    <operation name="PowerSearchRequest">
+      <input message="s0:PowerSearchRequest" />
+      <output message="s0:PowerSearchResponse" />
+    </operation>
+    <operation name="BrowseNodeSearchRequest">
+      <input message="s0:BrowseNodeSearchRequest" />
+      <output message="s0:BrowseNodeSearchResponse" />
+    </operation>
+    <operation name="AsinSearchRequest">
+      <input message="s0:AsinSearchRequest" />
+      <output message="s0:AsinSearchResponse" />
+    </operation>
+    <operation name="UpcSearchRequest">
+      <input message="s0:UpcSearchRequest" />
+      <output message="s0:UpcSearchResponse" />
+    </operation>
+    <operation name="AuthorSearchRequest">
+      <input message="s0:AuthorSearchRequest" />
+      <output message="s0:AuthorSearchResponse" />
+    </operation>
+    <operation name="ArtistSearchRequest">
+      <input message="s0:ArtistSearchRequest" />
+      <output message="s0:ArtistSearchResponse" />
+    </operation>
+    <operation name="ActorSearchRequest">
+      <input message="s0:ActorSearchRequest" />
+      <output message="s0:ActorSearchResponse" />
+    </operation>
+    <operation name="ManufacturerSearchRequest">
+      <input message="s0:ManufacturerSearchRequest" />
+      <output message="s0:ManufacturerSearchResponse" />
+    </operation>
+    <operation name="DirectorSearchRequest">
+      <input message="s0:DirectorSearchRequest" />
+      <output message="s0:DirectorSearchResponse" />
+    </operation>
+    <operation name="ListManiaSearchRequest">
+      <input message="s0:ListManiaSearchRequest" />
+      <output message="s0:ListManiaSearchResponse" />
+    </operation>
+    <operation name="WishlistSearchRequest">
+      <input message="s0:WishlistSearchRequest" />
+      <output message="s0:WishlistSearchResponse" />
+    </operation>
+    <operation name="ExchangeSearchRequest">
+      <input message="s0:ExchangeSearchRequest" />
+      <output message="s0:ExchangeSearchResponse" />
+    </operation>
+    <operation name="SellerProfileSearchRequest">
+      <input message="s0:SellerProfileSearchRequest" />
+      <output message="s0:SellerProfileSearchResponse" />
+    </operation>
+    <operation name="SellerSearchRequest">
+      <input message="s0:SellerSearchRequest" />
+      <output message="s0:SellerSearchResponse" />
+    </operation>
+    <operation name="SimilaritySearchRequest">
+      <input message="s0:SimilaritySearchRequest" />
+      <output message="s0:SimilaritySearchResponse" />
+    </operation>
+    <operation name="GetShoppingCartRequest">
+      <input message="s0:GetShoppingCartRequest" />
+      <output message="s0:ShoppingCartResponse" />
+    </operation>
+    <operation name="ClearShoppingCartRequest">
+      <input message="s0:ClearShoppingCartRequest" />
+      <output message="s0:ShoppingCartResponse" />
+    </operation>
+    <operation name="AddShoppingCartItemsRequest">
+      <input message="s0:AddShoppingCartItemsRequest" />
+      <output message="s0:ShoppingCartResponse" />
+    </operation>
+    <operation name="RemoveShoppingCartItemsRequest">
+      <input message="s0:RemoveShoppingCartItemsRequest" />
+      <output message="s0:ShoppingCartResponse" />
+    </operation>
+    <operation name="ModifyShoppingCartItemsRequest">
+      <input message="s0:ModifyShoppingCartItemsRequest" />
+      <output message="s0:ShoppingCartResponse" />
+    </operation>
+  </portType>
+  <binding name="AmazonSearchBinding" type="s0:AmazonSearchPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="KeywordSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="PowerSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="BrowseNodeSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="AsinSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="UpcSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="AuthorSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ArtistSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ActorSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ManufacturerSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="DirectorSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ExchangeSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ListManiaSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="WishlistSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="SellerProfileSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="SellerSearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="SimilaritySearchRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetShoppingCartRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ClearShoppingCartRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="AddShoppingCartItemsRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="RemoveShoppingCartItemsRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="ModifyShoppingCartItemsRequest">
+      <soap:operation soapAction="urn:PI/DevCentral/SoapService" />
+      <input>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:PI/DevCentral/SoapService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AmazonSearchService">
+    <port name="AmazonSearchPort" binding="s0:AmazonSearchBinding">
+      <soap:address location="http://soap.amazon.com/onca/soap2" />
+    </port>
+  </service>
+</definitions>

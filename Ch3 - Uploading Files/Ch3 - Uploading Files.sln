@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch3 - Uploading Files", "http://localhost/Ch3 - Uploading Files/Ch3 - Uploading Files.vbproj", "{A4CFF7B6-C355-427F-94C1-A7AEBB288A59}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A4CFF7B6-C355-427F-94C1-A7AEBB288A59}.Debug.ActiveCfg = Debug|.NET
+		{A4CFF7B6-C355-427F-94C1-A7AEBB288A59}.Debug.Build.0 = Debug|.NET
+		{A4CFF7B6-C355-427F-94C1-A7AEBB288A59}.Release.ActiveCfg = Release|.NET
+		{A4CFF7B6-C355-427F-94C1-A7AEBB288A59}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ch4 - Select Multiple", "http://localhost/Ch4 - Select Multiple/Ch4 - Select Multiple.vbproj", "{9E1206D5-1510-4F72-8B7D-107B98E344DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9E1206D5-1510-4F72-8B7D-107B98E344DA}.Debug.ActiveCfg = Debug|.NET
+		{9E1206D5-1510-4F72-8B7D-107B98E344DA}.Debug.Build.0 = Debug|.NET
+		{9E1206D5-1510-4F72-8B7D-107B98E344DA}.Release.ActiveCfg = Release|.NET
+		{9E1206D5-1510-4F72-8B7D-107B98E344DA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

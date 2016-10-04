@@ -1,0 +1,2318 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www.gotdotnet.com/team/windowsforms/appupdater.aspx -->
+<HTML><HEAD 
+id=_ctl0_PageHeading><TITLE>.NET Application Updater Component</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="" name=description></META>
+<META content="" name=keywords></META><LINK 
+href="Dot Net Updater Component_files/style.css" type=text/css 
+rel=stylesheet></LINK>
+<META content="MSHTML 6.00.2800.1141" name=GENERATOR></HEAD>
+<BODY leftMargin=0 background="Dot Net Updater Component_files/windowsforms" 
+topMargin=0 MARGINWIDTH="0" MARGINHEIGHT="0">
+<FORM id=PageForm name=PageForm action=appupdater.aspx method=post><INPUT 
+type=hidden name=__EVENTTARGET> <INPUT type=hidden name=__EVENTARGUMENT> <INPUT 
+type=hidden 
+value=dDwtMTIwNzE0MjE5Mjt0PDtsPGk8MD47aTwxPjs+O2w8dDw7bDxpPDE+O2k8Mj47PjtsPHQ8O2w8aTwwPjs+O2w8dDxAPC5ORVQgQXBwbGljYXRpb24gVXBkYXRlciBDb21wb25lbnQ7XGU7XGU7Pjs7Pjs+Pjt0PEA8XGU7XGU7Pjs7Pjs+Pjt0PDtsPGk8MD47aTwzPjs+O2w8dDw7bDxpPDE+O2k8Mz47aTw1Pjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8Mz47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw2Pjs+O2w8dDxwPHA8bDxGb250X1NpemU7XyFTQjs+O2w8U3lzdGVtLldlYi5VSS5XZWJDb250cm9scy5Gb250VW5pdCwgU3lzdGVtLldlYiwgVmVyc2lvbj0xLjAuMzMwMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2E8WFgtU21hbGw+O2k8MzA3NT47Pj47Pjs7Pjt0PHA8cDxsPFdpZHRoO18hU0I7PjtsPDE8MjAwcHg+O2k8MjU3Pjs+PjtwPGw8b25LZXlQcmVzczs+O2w8amF2YXNjcmlwdDpTdWJtaXRTZWFyY2hfY3RsMV9TZWFyY2hCb3gxKClcOzs+Pj47Oz47dDxwPGw8b25DbGljazs+O2w8Z29TZWFyY2hfY3RsMV9TZWFyY2hCb3gxKClcOzs+Pjs7Pjt0PEA8X2N0bDFfU2VhcmNoQm94MTtfY3RsMV9TZWFyY2hCb3gxX1RleHRCb3hRdWVyeTsvU2VhcmNoL1NlYXJjaC5hc3B4O19jdGwxX1NlYXJjaEJveDE7X2N0bDFfU2VhcmNoQm94MTs+Ozs+Oz4+Oz4+Oz4+O3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MT47PjtsPHQ8cDxsPF8hSXRlbUNvdW50Oz47bDxpPDU+Oz4+O2w8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+Oz47bDx0PDtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PHA8O3A8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDBfU2VjdGlvblBhbmVsJyk7Pj4+O2w8aTwwPjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8L2ltYWdlcy9sZWZ0bmF2X2Fycm93ZF9uZXcuZ2lmOz4+Oz47Oz47Pj47dDxwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGwwX1NlY3Rpb25QYW5lbCcpOz4+Ozs+O3Q8cDw7cDxsPHN0eWxlOz47bDxkaXNwbGF5Om5vbmVcOzs+Pj47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1Pjs+O2w8dDxwPDtwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGwxX1NlY3Rpb25QYW5lbCcpOz4+PjtsPGk8MD47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPC9pbWFnZXMvbGVmdG5hdl9hcnJvd2RfbmV3LmdpZjs+Pjs+Ozs+Oz4+O3Q8cDxsPG9uQ2xpY2s7PjtsPGV4cGFuZGl0KCdfY3RsMV9SaWdodE5hdmlnYXRpb25NZW51X01lbnVTZWN0aW9uc19fY3RsMV9TZWN0aW9uUGFuZWwnKTs+Pjs7Pjt0PHA8O3A8bDxzdHlsZTs+O2w8ZGlzcGxheTpub25lXDs7Pj4+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47PjtsPHQ8cDw7cDxsPG9uQ2xpY2s7PjtsPGV4cGFuZGl0KCdfY3RsMV9SaWdodE5hdmlnYXRpb25NZW51X01lbnVTZWN0aW9uc19fY3RsMl9TZWN0aW9uUGFuZWwnKTs+Pj47bDxpPDA+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDwvaW1hZ2VzL2xlZnRuYXZfYXJyb3dkX25ldy5naWY7Pj47Pjs7Pjs+Pjt0PHA8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDJfU2VjdGlvblBhbmVsJyk7Pj47Oz47dDxwPDtwPGw8c3R5bGU7PjtsPGRpc3BsYXk6bm9uZVw7Oz4+Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PHA8O3A8bDxvbkNsaWNrOz47bDxleHBhbmRpdCgnX2N0bDFfUmlnaHROYXZpZ2F0aW9uTWVudV9NZW51U2VjdGlvbnNfX2N0bDNfU2VjdGlvblBhbmVsJyk7Pj4+O2w8aTwwPjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8L2ltYWdlcy9sZWZ0bmF2X2Fycm93ZF9uZXcuZ2lmOz4+Oz47Oz47Pj47dDxwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGwzX1NlY3Rpb25QYW5lbCcpOz4+Ozs+O3Q8cDw7cDxsPHN0eWxlOz47bDxkaXNwbGF5Om5vbmVcOzs+Pj47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1Pjs+O2w8dDxwPDtwPGw8b25DbGljazs+O2w8ZXhwYW5kaXQoJ19jdGwxX1JpZ2h0TmF2aWdhdGlvbk1lbnVfTWVudVNlY3Rpb25zX19jdGw0X1NlY3Rpb25QYW5lbCcpOz4+PjtsPGk8MD47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPC9pbWFnZXMvbGVmdG5hdl9hcnJvd2RfbmV3LmdpZjs+Pjs+Ozs+Oz4+O3Q8cDxsPG9uQ2xpY2s7PjtsPGV4cGFuZGl0KCdfY3RsMV9SaWdodE5hdmlnYXRpb25NZW51X01lbnVTZWN0aW9uc19fY3RsNF9TZWN0aW9uUGFuZWwnKTs+Pjs7Pjt0PHA8O3A8bDxzdHlsZTs+O2w8ZGlzcGxheTpub25lXDs7Pj4+Ozs+Oz4+Oz4+Oz4+Oz4+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8Lk5FVCBBcHBsaWNhdGlvbiBVcGRhdGVyIENvbXBvbmVudDs+Pjs+Ozs+Oz4+O3Q8O2w8aTw0Pjs+O2w8dDxwPHA8bDxUZXh0Oz47bDzCqSBDb3B5cmlnaHQgMjAwMyBNaWNyb3NvZnQgQ29ycG9yYXRpb24uIEFsbCBSaWdodHMgUmVzZXJ2ZWQuOz4+Oz47Oz47Pj47Pj47Pj47PjM1Qmh4Znkp21jgML1OsVzEJQn8 
+name=__VIEWSTATE>
+<SCRIPT language=javascript>
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform = document.PageForm;
+		theform.__EVENTTARGET.value = eventTarget;
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</SCRIPT>
+ 
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR id=_ctl1_TopNavigation>
+    <TD background="Dot Net Updater Component_files/topbar_bg.gif" height=103>
+      <TABLE height=103 cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD id=_ctl1_TopLeftSpace vAlign=top width=300 bgColor=#ffffff 
+          rowSpan=3><A id=_ctl1_Logo 
+            style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 300px; HEIGHT: 103px; BORDER-RIGHT-WIDTH: 0px" 
+            href="http://www.gotdotnet.com/default.aspx"><IMG 
+            src="Dot Net Updater Component_files/gdn_logo.jpg" border=0></A></TD>
+          <TD width="100%" background="Dot Net Updater Component_files/1pix.gif" 
+          height=27><IMG height=27 alt="" 
+            src="Dot Net Updater Component_files/1pix.gif" width=1 border=0></TD>
+          <TD width=63 rowSpan=3><IMG height=103 alt="" 
+            src="Dot Net Updater Component_files/topbar_r.gif" width=63 
+          border=0></TD></TR>
+        <TR>
+          <TD align=right background="Dot Net Updater Component_files/1pix.gif" 
+          height=38>
+            <TABLE height=38 cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=2 height=3><IMG height=3 alt="" 
+                  src="Dot Net Updater Component_files/1pix.gif" width=1 
+                  border=0></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD width=60><SPAN class=SearchBoxText 
+                        id=_ctl1_SearchBox1_LabelSearchCaption 
+                        style="FONT-WEIGHT: bold; FONT-SIZE: xx-small">Search&nbsp;</SPAN></TD>
+                      <TD><INPUT 
+                        onkeypress=javascript:SubmitSearch_ctl1_SearchBox1(); 
+                        id=_ctl1_SearchBox1_TextBoxQuery style="WIDTH: 200px" 
+                        name=_ctl1:SearchBox1:TextBoxQuery> <INPUT class=gdnbutton id=_ctl1_SearchBox1_SubmitButton onclick=goSearch_ctl1_SearchBox1(); type=button value=Go name=_ctl1:SearchBox1:SubmitButton> 
+                      </TD></TR></TBODY></TABLE>
+                  <SCRIPT language=Javascript>
+
+function goSearch_ctl1_SearchBox1()
+{
+	var text = document.forms[0]._ctl1_SearchBox1_TextBoxQuery.value;
+	window.location.href = "/Search/Search.aspx?query=" + escape(text);
+}
+
+function SubmitSearch_ctl1_SearchBox1() 
+{	
+	if (event.keyCode == 13)
+	{
+		document.forms[0].onsubmit = onSubmitSearch;
+		goSearch_ctl1_SearchBox1();
+	}
+}
+
+function onSubmitSearch()
+{
+	return false;
+}
+
+</SCRIPT>
+                  <IMG height=1 alt="" 
+                  src="Dot Net Updater Component_files/1pix.gif" width=26 
+                  border=0></TD>
+                <TD width=30><IMG height=1 
+                  src="Dot Net Updater Component_files/1pix.gif" width=30></TD>
+                <TD><NOBR><SPAN id=_ctl1_PassportLabel 
+                  style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana"><A 
+                  href="http://www.gotdotnet.com/team/windowsforms/appupdater.aspx?msppchlg=1&amp;mspplogin=http://login.passport.com/login.srf%3Flc%3D1033%26id%3D3086%26ru%3Dhttp%253a%252f%252fwww.gotdotnet.com%252fteam%252fwindowsforms%252fappupdater.aspx%26tw%3D0%26kv%3D1%26ct%3D1048259124%26cb%3D%26ver%3D2.0.253.1%26tpf%3D68db56ced5b4266b5af7aaf8929be7a1"><IMG 
+                  class=PassportSignIn alt="Sign in with your Passport." 
+                  src="Dot Net Updater Component_files/signin.gif" border=0></A><!--PassportLogoGeneratedTime: 3/21/2003 7:05:24 AM--></SPAN><IMG 
+                  height=1 alt="" src="Dot Net Updater Component_files/1pix.gif" 
+                  width=7 border=0></NOBR></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD align=right background="Dot Net Updater Component_files/1pix.gif" 
+          height=38><IMG height=38 alt="" 
+            src="Dot Net Updater Component_files/topbar_title.gif" width=323 
+            border=0><IMG height=1 alt="" 
+            src="Dot Net Updater Component_files/1pix.gif" width=67 
+        border=0></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD vAlign=top height="100%">
+      <TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD id=_ctl1_LeftNavigation vAlign=top width=190 
+          background="Dot Net Updater Component_files/left_bg.gif">
+            <DIV id=_ctl1_RightNavigationMenu_Menu>
+            <TABLE cellSpacing=0 cellPadding=0 width=190 border=0>
+              <TBODY>
+              <TR>
+                <TD class=lnav_bg><IMG height=2 
+                  src="Dot Net Updater Component_files/leftnav_top_new.gif" 
+                  width=190><BR><A 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionArrowLink 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionPanel')"><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_ArrowImage 
+                  hspace=0 
+                  src="Dot Net Updater Component_files/leftnav_arrowd_new.gif" 
+                  align=right border=0></ASP:IMAGE></A> 
+                  <DIV class=lnav_header 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_HeaderCaptionColumn 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionPanel')"><SPAN 
+                  class=lnav_headertext 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionHeaderCaption>GotDotNet 
+                  Community</SPAN><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></TD>
+              <TR>
+                <TD class=lnav_bg>
+                  <DIV class=lnav_container 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_SectionPanel 
+                  style="DISPLAY: none">
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_SubSectionRepeater__ctl0_SubSectionCaption>Features<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/messageboard/Home.aspx">Message 
+                  Boards</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/resources/home.aspx">Resource 
+                  Center</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/user/directory.aspx">User 
+                  Directory</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/usersamples/">User 
+                  Samples</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/workspaces/">Workspaces</A><IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl0_SubSectionRepeater__ctl1_SubSectionCaption>Affiliated 
+                  Communities<IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/content/codewise/">Code Wise 
+                  Community</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/student/">GotDotNet 
+                  Student</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/terrarium/">Terrarium</A><IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></DIV><IMG height=11 alt="" 
+                  src="Dot Net Updater Component_files/leftnav_bottom_new.gif" 
+                  width=190 border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=190 border=0>
+              <TBODY>
+              <TR>
+                <TD class=lnav_bg><IMG height=2 
+                  src="Dot Net Updater Component_files/leftnav_top_new.gif" 
+                  width=190><BR><A 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionArrowLink 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionPanel')"><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_ArrowImage 
+                  hspace=0 
+                  src="Dot Net Updater Component_files/leftnav_arrowd_new.gif" 
+                  align=right border=0></ASP:IMAGE></A> 
+                  <DIV class=lnav_header 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_HeaderCaptionColumn 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionPanel')"><SPAN 
+                  class=lnav_headertext 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionHeaderCaption>.NET 
+                  Framework Technologies</SPAN><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></TD>
+              <TR>
+                <TD class=lnav_bg>
+                  <DIV class=lnav_container 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SectionPanel 
+                  style="DISPLAY: none">
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/">Meet the<BR>Technology 
+                  Makers</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl1_SubSectionCaption>Core<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/entservers/">.NET 
+                  Enterprise Servers</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/framework/default.aspx">.NET 
+                  Framework</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/clr/about_security.aspx">.NET 
+                  Framework Security</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.asp.net/">ASP.NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl1_SectionItemsRepeater__ctl3_ExternalImage 
+                  src="Dot Net Updater Component_files/gdn_icon_leaving.gif" 
+                  align=middle border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/clr/about_clr.aspx">Common 
+                  Language Runtime</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="Dot Net Updater Component_files/windowsforms">Windows 
+                  Forms</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/vfp/">Visual FoxPro with 
+                  .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://msdn.microsoft.com/vstudio/default.asp">Visual 
+                  Studio .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl1_SectionItemsRepeater__ctl7_ExternalImage 
+                  src="Dot Net Updater Component_files/gdn_icon_leaving.gif" 
+                  align=middle border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/XMLwebservices/default.aspx">XML 
+                  Web Services</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl2_SubSectionCaption>Languages<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/jscript/">JScript 
+                  .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/vb/">Visual Basic 
+                  .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/csharp/">Visual C# 
+                  .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/cplusplus/">Visual C++ 
+                  .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/vjsharp/">Visual J# 
+                  .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl3_SubSectionCaption>Devices<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/netcf/">.NET Compact 
+                  Framework</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.asp.net/mobile/">Mobile 
+                  Internet<BR>Toolkit</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl3_SectionItemsRepeater__ctl1_ExternalImage 
+                  src="Dot Net Updater Component_files/gdn_icon_leaving.gif" 
+                  align=middle border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl1_SubSectionRepeater__ctl4_SubSectionCaption>Competitive 
+                  Technologies<IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/java/">.NET Framework and 
+                  Java</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></DIV><IMG height=11 alt="" 
+                  src="Dot Net Updater Component_files/leftnav_bottom_new.gif" 
+                  width=190 border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=190 border=0>
+              <TBODY>
+              <TR>
+                <TD class=lnav_bg><IMG height=2 
+                  src="Dot Net Updater Component_files/leftnav_top_new.gif" 
+                  width=190><BR><A 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionArrowLink 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionPanel')"><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_ArrowImage 
+                  hspace=0 
+                  src="Dot Net Updater Component_files/leftnav_arrowd_new.gif" 
+                  align=right border=0></ASP:IMAGE></A> 
+                  <DIV class=lnav_header 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_HeaderCaptionColumn 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionPanel')"><SPAN 
+                  class=lnav_headertext 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionHeaderCaption>.NET 
+                  Downloads</SPAN><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></TD>
+              <TR>
+                <TD class=lnav_bg>
+                  <DIV class=lnav_container 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_SectionPanel 
+                  style="DISPLAY: none">
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/changeinfo/default.aspx">Breaking 
+                  Changes</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/upgrade/default.aspx">Upgrading 
+                  to .NET Framework</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://msdn.microsoft.com/downloads/default.asp?URL=/code/sample.asp?url=/msdn-files/027/000/976/msdncompositedoc.xml">.NET 
+                  Framework SDK</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_SubSectionRepeater__ctl0_SectionItemsRepeater__ctl2_ExternalImage 
+                  src="Dot Net Updater Component_files/gdn_icon_leaving.gif" 
+                  align=middle border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://msdn.microsoft.com/downloads/default.asp?url=/downloads/sample.asp?url=/msdn-files/027/001/829/msdncompositedoc.xml">.NET 
+                  Framework<BR>Redist</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_SubSectionRepeater__ctl0_SectionItemsRepeater__ctl3_ExternalImage 
+                  src="Dot Net Updater Component_files/gdn_icon_leaving.gif" 
+                  align=middle border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://msdn.microsoft.com/vstudio/downloads/default.asp">Visual 
+                  Studio .NET</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl2_SubSectionRepeater__ctl0_SectionItemsRepeater__ctl4_ExternalImage 
+                  src="Dot Net Updater Component_files/gdn_icon_leaving.gif" 
+                  align=middle border=0></DIV></DIV><IMG height=11 alt="" 
+                  src="Dot Net Updater Component_files/leftnav_bottom_new.gif" 
+                  width=190 border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=190 border=0>
+              <TBODY>
+              <TR>
+                <TD class=lnav_bg><IMG height=2 
+                  src="Dot Net Updater Component_files/leftnav_top_new.gif" 
+                  width=190><BR><A 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionArrowLink 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionPanel')"><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_ArrowImage 
+                  hspace=0 
+                  src="Dot Net Updater Component_files/leftnav_arrowd_new.gif" 
+                  align=right border=0></ASP:IMAGE></A> 
+                  <DIV class=lnav_header 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_HeaderCaptionColumn 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionPanel')"><SPAN 
+                  class=lnav_headertext 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionHeaderCaption>Toolbox</SPAN><IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></TD>
+              <TR>
+                <TD class=lnav_bg>
+                  <DIV class=lnav_container 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_SectionPanel 
+                  style="DISPLAY: none">
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_SubSectionRepeater__ctl0_SubSectionCaption>Tutorials<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/quickstart/">.NET 
+                  Framework<BR>QuickStart Tutorials</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_SubSectionRepeater__ctl1_SubSectionCaption>Samples<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/netcf/askdotnet/">AskDotNet</A><IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/terrarium/">Terrarium</A><IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/Community/UserSamples/">User 
+                  Samples</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_2ndheader 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl3_SubSectionRepeater__ctl2_SubSectionCaption>Tools<IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/libraries">FxCop</A><IMG 
+                  height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/tools/web_svc/default.aspx">Web 
+                  Service Tools</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/team/xmltools/">XML 
+                  Tools</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></DIV><IMG height=11 alt="" 
+                  src="Dot Net Updater Component_files/leftnav_bottom_new.gif" 
+                  width=190 border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=190 border=0>
+              <TBODY>
+              <TR>
+                <TD class=lnav_bg><IMG height=2 
+                  src="Dot Net Updater Component_files/leftnav_top_new.gif" 
+                  width=190><BR><A 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionArrowLink 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionPanel')"><IMG 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl4_ArrowImage 
+                  hspace=0 
+                  src="Dot Net Updater Component_files/leftnav_arrowd_new.gif" 
+                  align=right border=0></ASP:IMAGE></A> 
+                  <DIV class=lnav_header 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl4_HeaderCaptionColumn 
+                  onclick="expandit('_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionPanel')"><SPAN 
+                  class=lnav_headertext 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionHeaderCaption>My 
+                  GotDotNet</SPAN><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></TD>
+              <TR>
+                <TD class=lnav_bg>
+                  <DIV class=lnav_container 
+                  id=_ctl1_RightNavigationMenu_MenuSections__ctl4_SectionPanel 
+                  style="DISPLAY: none">
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/Community/MessageBoard/ManageSubscription.aspx">Manage 
+                  Message Board Subscriptions</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/user/viewprofile.aspx#samples">Manage 
+                  My Samples</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/user/viewprofile.aspx">My 
+                  Profile</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV>
+                  <DIV class=lnav_links><A class=rollovernav 
+                  href="http://www.gotdotnet.com/community/workspaces/WorkspacesConsole.aspx">My 
+                  Workspaces</A><IMG height=1 alt="" 
+                  src="E:\WhiteCliff\VB.NET Tips + Tricks\chapters\Source\Ch2 - Updater Component\Dot Net Updater Component_files\1pix(1).gif" 
+                  width=5 border=0></DIV></DIV><IMG height=11 alt="" 
+                  src="Dot Net Updater Component_files/leftnav_bottom_new.gif" 
+                  width=190 border=0></TD></TR></TBODY></TABLE>
+            <SCRIPT language=JavaScript 
+id=_ctl1_RightNavigationMenu_SetupScript>
+<!--
+	var sectionCount = 5;
+	var menuCookieName = "GenericPageMenu";
+	var menuClientId = "_ctl1_RightNavigationMenu_Menu";
+	var menuId = "Menu";
+	var arrowDown = new Image();
+	arrowDown.src = "/images/leftnav_arrowu_new.gif";
+	var arrowRight = new Image();
+	arrowRight.src = "/images/leftnav_arrowd_new.gif";
+
+--></SCRIPT>
+            </DIV><IMG height=63 
+            src="Dot Net Updater Component_files/nav_footer.gif" width=190 
+            border=0> <SPAN id=_ctl1_RightNavigationMenu_MainScriptLabel>
+            <SCRIPT language=JavaScript 
+            src="Dot Net Updater Component_files/Menu.js"></SCRIPT>
+            </SPAN></TD>
+          <TD vAlign=top width="100%" bgColor=#ffffff><SPAN><SPAN 
+            id=_ctl1_PageTitleLabel 
+            style="FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #000042">.NET 
+            Application Updater Component</SPAN></SPAN><BR><BR><!-- 207.46.248.8 207.46.248.125 --><!-- Begin Content -->
+            <DIV class=Section1>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><A 
+            href="http://www.gotdotnet.com/team/windowsforms/DotNetUpdater.zip">Download 
+            the .NET Application Updater Component</A><O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 18pt; FONT-FAMILY: Arial">.NET Client 
+            Applications: <SPAN style="mso-spacerun: yes"></SPAN>.NET 
+            Application Updater Component<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-no-proof: yes">I 
+            recently received</SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> a mail from the 
+            Microsoft IT team notifying me that they had detected several 
+            applications on my desktop computer that did not have the latest 
+            patches installed and instructed me to install the latest 
+            updates.<SPAN style="mso-spacerun: yes"> </SPAN>Ill be the first to 
+            admit that I dont update the applications I run as much as I should; 
+            either on my home machine or on my work machines.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>It usually takes a problem like a 
+            broken feature in an application or an email (or sometimes several) 
+            from the IT department, to get me to install updates.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Unfortunately Im more of the rule 
+            than the exception when it comes to users updating their 
+            applications.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This requirement of 
+            needing a user or admin to manually install an update is why rolling 
+            out client updates has traditionally been such a huge problem and 
+            expense.<SPAN style="mso-spacerun: yes"> </SPAN>One solution is to 
+            move the responsibility of updating the application from the user to 
+            the application itself.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Instead of the user obtaining and installing a software 
+            update, the client application itself is responsible for downloading 
+            and installing updates from a well known server.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The only user interaction 
+            necessary is whether or not they want to install the new updates now 
+            or later.<SPAN style="mso-spacerun: yes"> </SPAN>You can see this 
+            type of approach to updating applications in action today with 
+            products like Windows XP and Microsoft Money.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In this article we will 
+            talk about an approach to building .NET client applications that are 
+            able to automatically update themselves.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">The .NET Application 
+            Updater Component<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Included with this 
+            whitepaper is a component for enabling .NET client applications to 
+            automatically update themselves.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The component was written using the .NET Framework and 
+            enables you to make your application auto-updatable simply by 
+            dropping the component into your existing .NET applications and 
+            setting a few properties (ex. where to get updates from).<SPAN 
+            style="mso-spacerun: yes"> </SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><A 
+            href="http://www.gotdotnet.com/team/windowsforms/DotNetUpdater.zip">Download 
+            the .NET Application Updater Component</A>.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This component is not a 
+            Microsoft product.<SPAN style="mso-spacerun: yes"> </SPAN>It is 
+            intended as a sample to get you started and as such the source is 
+            also included with this whitepaper.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>However, it is worth mentioning that this component has 
+            gotten a fair amount of real world use already.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>It has been used internally in 
+            Microsoft to enable auto-updatability in the .NET Terrarium game (<A 
+            href="http://www.gotdotnet.com/terrarium/">http://www.gotdotnet.com/terrarium/</A>).<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Terrarium has been installed and 
+            used by over 10,000 individuals since it was first unveiled as a 
+            beta product in October, 2001.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This component will be 
+            the basis for the discussion of what it takes to make an application 
+            auto-updatable.<SPAN style="mso-spacerun: yes"> </SPAN>This paper 
+            will focus on how the .NET Application Updater component works and 
+            how you can use it in your own application.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Checking for 
+            Updates<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The first thing an 
+            application needs to be able to do in order to update itself is 
+            figure out when a new update is available.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>In order to do this an application 
+            needs to know three things 1) where to check for updates, 2) when to 
+            check for updates and 3) how to check for updates.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The application update component 
+            uses HTTP for all network communication.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This allows it to update 
+            applications over the intranet or extranet.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Thus the where to check for 
+            updates is simply a URL to a well known Web server.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">To address the when to 
+            check for updates, the .NET Application Updater component creates a 
+            thread on component creation which is responsible for checking for 
+            updates.<SPAN style="mso-spacerun: yes"> </SPAN>This thread will 
+            sleep for most of the time, but will wake up at the configured 
+            interval to perform an update check.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>How often the application checks for new updates is dependent 
+            on the individual application, but common values range from one hour 
+            to one day between update checks.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>This polling based approach is not appropriate for all 
+            applications, for example Microsoft Money only checks for updates 
+            when the user tells them to.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>In this case, the update poller thread can be disabled and 
+            update checks performed on-demand by calling the CheckForUpdate() 
+            method on the updater component.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">There are several ways 
+            to go about the how to check for updates:<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Method #1:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Direct File Check</SPAN></B><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> The simplest way to 
+            check for updates is to use HTTP to compare the last modified 
+            date/time stamp of the application files on the server with that on 
+            the client.<SPAN style="mso-spacerun: yes"> </SPAN>If the server has 
+            newer files, the client knows its time to update itself.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This is the same way a Web browser 
+            knows if it needs to re-download an html page or image or whether it 
+            can just re-use the one previously downloaded.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This is certainly the simplest to 
+            administrate.<SPAN style="mso-spacerun: yes"> </SPAN>When a new 
+            version of the app is available, the administrator simply copies the 
+            newer version over the older version on the Web server.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The problem with this is that the 
+            update is not atomic and thus there are potential windows of 
+            failure.<SPAN style="mso-spacerun: yes"> </SPAN>For example, if an 
+            administrator updates the version of the app on the Web server while 
+            a client was in the middle of downloading the previous update, that 
+            client may be left with some files from the previous update and some 
+            files from new update.<SPAN style="mso-spacerun: yes"> </SPAN>For 
+            this reason, using a direct file check is not recommended for any 
+            non-trivial applications.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Method #2:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Manifest Check</SPAN></B><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> To solve the atomicity 
+            problem with direct file checks a level of indirection is 
+            needed.<SPAN style="mso-spacerun: yes"> </SPAN>To create a level of 
+            indirection a manifest file on the server is used.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>A valid server manifest file for 
+            use with the .NET Application Updater component looks like 
+            this:<SPAN style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">&lt;VersionConfig&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-tab-count: 1"></SPAN>&lt;AvailableVersion&gt;1.0.0.0&lt;/AvailableVersion&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-tab-count: 1"></SPAN>&lt;ApplicationUrl&gt;http://localhost/demos/selfupdate/V1/&lt;/ApplicationUrl&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">&lt;/VersionConfig&gt;<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">AvailableVersion 
+            specifies the assembly version number of the latest available 
+            version.<SPAN style="mso-spacerun: yes"> </SPAN>The ApplicationURL 
+            property specifies the URL where that version of the application 
+            resides.<SPAN style="mso-spacerun: yes"> </SPAN>When the 
+            administrator wants to update the client applications, they would 
+            copy the new version of the app up to the Web server and modify the 
+            server manifest file appropriately.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The client itself will then detect that the server manifest 
+            file has changed and download the manifest file.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The client then compares the 
+            assembly version number specified in the manifest with the assembly 
+            version number of the applications .exe file.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If the server manifest file 
+            AvailableVersion is newer, the application knows its time to perform 
+            an update.<SPAN style="mso-spacerun: yes"> </SPAN>This approach has 
+            none of the atomicity problems of the previous approach and is the 
+            recommended way to check for updates for most applications.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Method #3:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>XML Web Service 
+            Check</SPAN></B><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> 
+            XML Web services provide a way to perform more advanced update 
+            checks.<SPAN style="mso-spacerun: yes"> </SPAN>For example, suppose 
+            you wanted to roll out an update to a set of early adopters before 
+            you rolled it out to the rest of your users.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If the client application calls an 
+            XML Web service to check if an update is available, that XML Web 
+            service could then look up that user in a database and determine if 
+            the user is an early adopter or not.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>If they are, the XML Web service could return a value 
+            indicating that an update is available.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If not, the Web service could 
+            return a value indicating that a new update is not available.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Because the Web service used to 
+            check for updates could take many forms depending on what custom 
+            functionality is desired, the .NET Application Updater component 
+            does not provide direct XML Web service support.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>To use an XML Web service to check 
+            for updates, first build the XML Web service and then hook the 
+            OnCheckForUpdate event.<SPAN style="mso-spacerun: yes"> </SPAN>This 
+            allows the poller threads update check to be replaced with your own 
+            custom check.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            OnCheckForUpdate event has a return value to indicate whether an 
+            update was detected or not.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Downloading 
+            Updates<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Once the application 
+            determines a new update is available, the update needs to be 
+            downloaded.<SPAN style="mso-spacerun: yes"> </SPAN>By default, when 
+            the .NET Application Updater component detects that a new update is 
+            available it will automatically kick off another thread and start an 
+            asynchronous background download of the update.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The download is done using 
+            HTTP-DAV.<SPAN style="mso-spacerun: yes"> </SPAN>DAV is an extension 
+            to HTTP that provides functionality such as directory and file 
+            enumeration.<SPAN style="mso-spacerun: yes"> </SPAN>A complete and 
+            deep download is done starting with the specified URL.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The URL used to download depends 
+            on the type of update check being done.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>For example, if a server manifest 
+            is used, the URL to download the update from is specified by the 
+            ApplicationURL property in the server 
+manifest.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The download of the 
+            update obviously needs to be robust.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Leaving the client application in any kind of bad state after 
+            the download and update is unacceptable.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Any number of problems could occur 
+            during the download:<SPAN style="mso-spacerun: yes"> </SPAN>The Web 
+            server where the update resides could go down, the client machine 
+            could crash, or for that matter the user could simply shut down the 
+            application itself.<SPAN style="mso-spacerun: yes"> </SPAN>Since the 
+            application is what is doing the download, if its shut down, the 
+            download will stop.<SPAN style="mso-spacerun: yes"> </SPAN>An 
+            alternative design would have been to use a separate system service 
+            to do the download and update of the application.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>With a system service, the 
+            download of the update could continue even when the application 
+            itself is not running.<SPAN style="mso-spacerun: yes"> </SPAN>In 
+            fact, Windows XP has a built-in download service called BITS for 
+            just this purpose.<SPAN style="mso-spacerun: yes"> </SPAN>BITS is 
+            what Windows XP uses to download updates to Windows itself.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>For more information on BITS, see 
+            <SPAN style="COLOR: navy"><A 
+            href="http://msdn.microsoft.com/library/en-us/dnwxp/html/WinXP_BITS.asp">http://msdn.microsoft.com/library/en-us/dnwxp/html/WinXP_BITS.asp</A>.</SPAN><SPAN 
+            style="mso-spacerun: yes"> </SPAN>A service was not used in the .NET 
+            Application Updater component so that it would work on the Windows 
+            9x operating systems which do not support system services. 
+            <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The .NET Application 
+            Updater component achieves robustness by breaking the download and 
+            update process into separate stages.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>As each stage is complete, it is recorded in an updater 
+            manifest file which resides in the application directory on the 
+            client.<SPAN style="mso-spacerun: yes"> </SPAN>If the download or 
+            update process is interrupted at any stage, it will simply resume 
+            from the point of the last completed phase the next time the app is 
+            started.<SPAN style="mso-spacerun: yes"> </SPAN>Each stage is re-run 
+            able so that if a failure occurs in the middle of a stage, 
+            re-running the stage from start will succeed.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If an error occurs, such as the 
+            loss of connectivity with the Web server during a download, the .NET 
+            Application Updater component will simply try again later.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If enough failures are reported 
+            (ex. The Web server never came back online), the download and update 
+            will be aborted and an error reported.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Performing 
+            updates<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Once the new update has 
+            been downloaded, the last step is to apply the update.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This last step is by far the most 
+            challenging.<SPAN style="mso-spacerun: yes"> </SPAN>The fundamental 
+            problem is that the application is trying to update its own files 
+            while running.<SPAN style="mso-spacerun: yes"> </SPAN>Thus the files 
+            are locked.<SPAN style="mso-spacerun: yes"> </SPAN>The only way to 
+            unlock the files is to stop the application, but if you stop the 
+            application, how can it update its files?<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Its a catch 22.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>We went through several designs 
+            before we came up with our final approach.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Before I describe the final 
+            design, lets look at our first approach and describe its 
+            shortcomings.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Our first approach was 
+            to simply kick off a separate process to perform the update.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This separate process would first 
+            shut down the application process, perform the update (since the 
+            files were now unlocked), restart the application process and then 
+            shut itself down when complete.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>However, there were three fundamental problems with this 
+            design:<O:P></O:P></SPAN></P>
+            <UL style="MARGIN-TOP: 0in" type=disc>
+              <LI class=MsoNormal 
+              style="mso-list: l16 level1 lfo7; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">It simply did not work 
+              in some scenarios.<SPAN style="mso-spacerun: yes"> </SPAN>For 
+              example, Windows runs screen savers in what is called a Job 
+              object.<SPAN style="mso-spacerun: yes"> </SPAN>The defining 
+              characteristic of a Job is that when the root process of a Job is 
+              shut down, all processes it created are also shut down.<SPAN 
+              style="mso-spacerun: yes"> </SPAN>This makes sense when you think 
+              about it.<SPAN style="mso-spacerun: yes"> </SPAN>When a screen 
+              saver goes away, you want to make sure it all goes away.<SPAN 
+              style="mso-spacerun: yes"> </SPAN>However, in the application 
+              update case, when the updater process shut down the original 
+              application process, the updater process itself would also be shut 
+              down and thus no update performed. <O:P></O:P></SPAN>
+              <LI class=MsoNormal 
+              style="mso-list: l16 level1 lfo7; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">We wanted to be able 
+              to automatically update all of the code that performed the 
+              update.<SPAN style="mso-spacerun: yes"> </SPAN>In the course of 
+              use, we would find bugs in the .NET Application Updater component, 
+              (ex. A timing window that would effect 1% of clients), and we 
+              wanted the ability to automatically roll out fixes of not just the 
+              application, but the .NET Application Updater component as 
+              well.<SPAN style="mso-spacerun: yes"> </SPAN>With this model, we 
+              could not update the process that performed the 
+              update.<O:P></O:P></SPAN> 
+              <LI class=MsoNormal 
+              style="mso-list: l16 level1 lfo7; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Forcing the user to 
+              shut down the application and wait in the middle of use was 
+              undesirable.<SPAN style="mso-spacerun: yes"> 
+              </SPAN><O:P></O:P></SPAN></LI></UL>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The final approach used 
+            to perform the application update was inspired by the side-by-side 
+            assembly model of the .NET Framework.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Instead of trying to update the 
+            application itself, create a new upto-date version of the 
+            application next to the existing version.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The new version can be created by 
+            merging the existing application directory with the downloaded 
+            update.<SPAN style="mso-spacerun: yes"> </SPAN>When the new version 
+            is complete, the user will automatically use that version the next 
+            time they launch the application.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The original copy of the application can then be removed. 
+            This tricky part is figuring out which version to launch at any 
+            given time.<SPAN style="mso-spacerun: yes"> </SPAN>To do that, a 
+            program named Appstart is introduced.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN>Appstart is the entry point into 
+            your application.<SPAN style="mso-spacerun: yes"> </SPAN>With this 
+            model, your application directory will look something like 
+            this:<SPAN style="mso-spacerun: yes"> </SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Program Files 
+            <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">MyApp 
+            <O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-LEFT: 19.5pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN></B><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN></B><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Appstart.exe<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal style="MARGIN-LEFT: 19.5pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN></B><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN></B><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Appstart.config<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal style="MARGIN-LEFT: 19.5pt"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">V1 
+            Folder<O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-LEFT: 19.5pt"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN>MyApp.exe <O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-LEFT: 19.5pt"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">V1.1 
+            Folder<O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-LEFT: 19.5pt"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-spacerun: yes"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Wingdings; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-char-type: symbol; mso-symbol-font-family: Wingdings"><SPAN 
+            style="mso-char-type: symbol; mso-symbol-font-family: Wingdings"></SPAN></SPAN><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN>MyApp.exe<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">To run your application, 
+            you always run Appstart.exe.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>If you want a shortcut on the desktop, the shortcut should 
+            point at Appstart, not at the application directly (Note that you 
+            can rename AppStart.exe to be whatever you want, ex. 
+            YourApp.exe).<SPAN style="mso-spacerun: yes"> </SPAN>Appstart.exe is 
+            a very simple program that reads the Appstart.config file and 
+            launches the specified application.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>A valid Appstart.config file looks like the following:<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">&lt;Config&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN>&lt;AppFolderName&gt;V1 
+            Folder&lt;/AppFolderName&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN>&lt;AppExeName&gt;MyApp.exe&lt;/AppExeName&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN>&lt;AppLaunchMode&gt;appdomain&lt;/AppLaunchMode&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">&lt;/Config&gt;<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The AppFolderName 
+            specifies the subfolder that contains the current version of the app 
+            to run.<SPAN style="mso-spacerun: yes"> </SPAN>The AppExeName 
+            contains the name of the exe within that folder to launch.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>When an application update is 
+            complete, the final step is to change the AppFolderName value to 
+            point at the new version of the application.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Thus the next time the user runs 
+            the application, they will run the new updated version of the 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            AppLaunchMode specifies how to launch the application.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>There are two ways to launch the 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>This first 
+            approach is with AppDomains.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>AppDomains are a feature of the .NET Framework common 
+            language runtime and the logical unit of isolation and 
+            administration of objects.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The common language runtime allows multiple application 
+            domains per process.<SPAN style="mso-spacerun: yes"> </SPAN>Thus 
+            Appstart.exe can launch your application in a separate AppDomain but 
+            within the same AppStart.exe process. <SPAN 
+            style="mso-spacerun: yes"></SPAN>Thus, despite the fact that two 
+            different exes are running (in this case Appstart.exe and 
+            MyApp.exe), only one process is used.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>For most applications AppDomains 
+            will work well, however there are a few minor differences with 
+            running in a separate AppDomain vs. a separate process.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>For that case, the AppLaunchMode 
+            can be set to process which will cause the application to launch in 
+            a separate process. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Once Appstart has 
+            started the application, it will go to sleep and wait for the 
+            application to terminate.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Once the application terminates, Appstart will also shut 
+            down.<SPAN style="mso-spacerun: yes"> </SPAN>However, if the 
+            application shuts down with a well known return code, the Appstart 
+            process will re-read the Appstart.config file and re-launch the 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>This is useful 
+            if the user wants to begin using the new version of the application 
+            immediately after it is available. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Using the .NET 
+            Application Updater Component<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Now that weve discussed 
+            how the .NET Application Updater works, lets put it in action.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>First we will build a very simple 
+            Windows Forms application.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Then we will enable it to auto-update itself using the .NET 
+            Application Updater component.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Finally well deploy the application and see the auto-update 
+            feature in action.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Included with this paper 
+            is a zip file named DotNetUpdater.zip that contains the .NET 
+            Application Updater component.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The zip file also contains a Sample directory which contains 
+            a number of files and folders we will be using in this walkthrough. 
+            <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Step 1:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Build the application to 
+            update<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In this step we will 
+            build the application to auto-update.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If you want, you can substitute in 
+            your own application here.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>You can also use the pre-built sample application included in 
+            the Samples\SampleApp\SampleApp directory of the zip file.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>However for the purpose of proving 
+            that there isnt anything special about SampleApp, well walk through 
+            its creation.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l2 level1 lfo13; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">1.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Use Visual Studio .NET 
+            to create a new Windows Application project, name it SampleApp.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l2 level1 lfo13; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">2.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Give the form an 
+            interesting background color of your choice.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>We will be using background color 
+            to differentiate between versions later.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l2 level1 lfo13; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">3.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Now lets add a tiny bit 
+            of functionality to this application in the form of a button that 
+            opens a form residing in a separate assembly.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>First add a button to your 
+            form.<SPAN style="mso-spacerun: yes"> </SPAN>The zip file contains 
+            an assembly with a simple Windows Form in it.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Add a reference to the 
+            Samples\SampleApp\SimpleForm assembly in the zip.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Then add two lines of code to your 
+            button event handler:<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN><SPAN 
+            style="mso-tab-count: 1"></SPAN><SPAN 
+            style="mso-tab-count: 1"></SPAN>SimpleForm.Form1 F = <SPAN 
+            style="COLOR: blue">new</SPAN> 
+            SimpleForm.Form1();<O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-tab-count: 2"></SPAN>F.Show();<O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l2 level1 lfo13; tab-stops: list .25in; mso-layout-grid-align: none"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">4.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Switch your build flag 
+            to build RELEASE instead of debug.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>This will allow us to avoid pdb file locking problems later 
+            when we build a new version of the application while the original 
+            copy is still running.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l2 level1 lfo13; tab-stops: list .25in; mso-layout-grid-align: none"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">5.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Build and test your 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>It should look 
+            similar to the Samples\SampleApp\SampleApp in the zip 
+            file.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Step 2:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Add the .NET Application Updater 
+            Component<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In this step we will add 
+            the .NET Application Updater component to 
+            SampleApp.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l11 level1 lfo21; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">1.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In the components tab of 
+            the Visual Studio .NET toolbox, right click and select Customize 
+            Toolbox. Select the .NET Framework Components tab.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Browse and select the 
+            AppUpdater.dll in the AppUpdater project included in the zip.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Click OK.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l11 level1 lfo21; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">2.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">An AppUpdater icon 
+            should now show up at the bottom of the list of components in the 
+            toolbox.<SPAN style="mso-spacerun: yes"> </SPAN>Drag and drop the 
+            AppUpdater component onto the SampleApp Form.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>An appUpdater1 instance of the 
+            .NET Application Updater component should be instantiated and appear 
+            below the form. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Step 3:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Configure the .NET Application 
+            Updater Component<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In this step we will 
+            configure the .NET Application Updater component.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>To do this, select the appUpdater1 
+            component and open its properties.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The following section contains a description of each property 
+            and what value to set it to.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Note that you only need to change the first four properties 
+            for this example, for the rest, the defaults are 
+            adequate.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><U><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">AppUpdater 
+            Properties</SPAN></U></B><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> These are the core 
+            properties of the .NET Application Updater and will need to be set 
+            for this application as follows:<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <TABLE class=MsoTableGrid 
+            style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 26.6pt; BORDER-LEFT: medium none; WIDTH: 531pt; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" 
+            cellSpacing=0 cellPadding=0 width=708 border=1>
+              <TBODY>
+              <TR style="mso-yfti-irow: 0">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 109.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt" 
+                vAlign=top width=145>
+                  <P class=MsoNormal><B 
+                  style="mso-bidi-font-weight: normal"><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Property 
+                  Name<O:P></O:P></SPAN></B></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 421.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt" 
+                vAlign=top width=563>
+                  <P class=MsoNormal><B 
+                  style="mso-bidi-font-weight: normal"><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Description<O:P></O:P></SPAN></B></P></TD></TR>
+              <TR style="mso-yfti-irow: 1">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 109.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=145>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">AutoFileLoad<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 421.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=563>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This controls the 
+                  on-demand download feature described later, for now set this 
+                  to true.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 2">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 109.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=145>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">ChangeDetectionMode<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 421.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=563>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This enum 
+                  determines how to check for updates.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>In this example, we will use 
+                  a server manifest check, so set this value to 
+                  ServerManifestCheck.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 3">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 109.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=145>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">ShowDefaultUI<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 421.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=563>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The .NET 
+                  Application Updater component has a set of simple UI for 
+                  notifying the user of events such as a new update becoming 
+                  available or errors during updates.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>This UI can be replaced with 
+                  custom application specific UI by disabling the default UI, 
+                  hooking the appropriate events (ex. OnUpdateComplete) and 
+                  popping up the custom UI.<SPAN style="mso-spacerun: yes"> 
+                  </SPAN>For this example we will use the default UI, so set 
+                  this value to true.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 4; mso-yfti-lastrow: yes">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 109.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=145>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">UpdateUrl<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 421.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=563>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The UpdateUrl is 
+                  what determines where the updater looks for updates.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>In this case we are using a 
+                  server manifest to check for updates, so this property should 
+                  be set to the URL of the server manifest.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>For this example, set it to 
+                  <A 
+                  href="http://yourwebserver/SampleApp_ServerSetup/UpdateVersion.xml">http://yourWebserver/SampleApp_ServerSetup/UpdateVersion.xml</A>.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>Replace yourWebserver with 
+                  the name of your Web server.<SPAN style="mso-spacerun: yes"> 
+                  </SPAN><O:P></O:P></SPAN></P></TD></TR></TBODY></TABLE>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><BR><B 
+            style="mso-bidi-font-weight: normal"><U>Downloader 
+            Properties</U></B> The AppUpdater component has two 
+            sub-components.<SPAN style="mso-spacerun: yes"> </SPAN>The first is 
+            called the Downloader and controls the download and installation of 
+            the component.<SPAN style="mso-spacerun: yes"> </SPAN>Below is a 
+            description of the properties, but all defaults will work fine for 
+            our SampleApp. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <TABLE class=MsoTableGrid 
+            style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 26.6pt; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" 
+            cellSpacing=0 cellPadding=0 border=1>
+              <TBODY>
+              <TR style="mso-yfti-irow: 0">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 154.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt" 
+                vAlign=top width=205>
+                  <P class=MsoNormal><B 
+                  style="mso-bidi-font-weight: normal"><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Property 
+                  Name<O:P></O:P></SPAN></B></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 349.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt" 
+                vAlign=top width=467>
+                  <P class=MsoNormal><B 
+                  style="mso-bidi-font-weight: normal"><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Description<O:P></O:P></SPAN></B></P></TD></TR>
+              <TR style="mso-yfti-irow: 1">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 154.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=205>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">DownloadRetryAttempts<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 349.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=467>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">If a failure 
+                  occurs during download (ex the Web server goes down) the 
+                  downloader will try again a little later.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>This property controls the 
+                  number of times the downloader will retry the network request 
+                  before treating it as a complete application update failure. 
+                  <O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 2">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 154.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=205>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">SecondsBeteweenDownloadRety<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 349.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=467>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The number of 
+                  seconds before retrying the network 
+                  request.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 3">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 154.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=205>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">UpdateRetryAttempts<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 349.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=467>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">If a serious error 
+                  occurs during the update process, (ex. The downloader has 
+                  exceeded the DownloadRetryAttempts), an application update 
+                  error is generated.<SPAN style="mso-spacerun: yes"> </SPAN>By 
+                  default, the update attempt will stop, but will attempt to 
+                  resume the next time the application is started (ex maybe the 
+                  update Web server was just down for day).<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>This property controls how 
+                  many times an update will be attempted.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>If this value is exceeded, 
+                  the updater aborts the update, resets its state and goes back 
+                  to checking for updates.<SPAN style="mso-spacerun: yes"> 
+                  </SPAN><O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 4; mso-yfti-lastrow: yes">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 154.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=205>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">ValidateAssemblies<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 349.95pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=467>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This controls the 
+                  level of validation done on downloaded assemblies.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>See the security section of 
+                  this paper for more 
+            info.<O:P></O:P></SPAN></P></TD></TR></TBODY></TABLE>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><U><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Poller 
+            Properties</SPAN></U></B><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"> The second 
+            sub-component of the AppUpdater is the Poller.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The Poller controls the update 
+            checks.<SPAN style="mso-spacerun: yes"> </SPAN>Below is a 
+            description of the properties, but all defaults will work fine for 
+            our SampleApp. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <TABLE class=MsoTableGrid 
+            style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 26.6pt; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" 
+            cellSpacing=0 cellPadding=0 border=1>
+              <TBODY>
+              <TR style="mso-yfti-irow: 0">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 106.8pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt" 
+                vAlign=top width=142>
+                  <P class=MsoNormal><B 
+                  style="mso-bidi-font-weight: normal"><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Property 
+                  Name<O:P></O:P></SPAN></B></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 397.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt" 
+                vAlign=top width=530>
+                  <P class=MsoNormal><B 
+                  style="mso-bidi-font-weight: normal"><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Description<O:P></O:P></SPAN></B></P></TD></TR>
+              <TR style="mso-yfti-irow: 1">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 106.8pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=142>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">AutoStart<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 397.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=530>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">A Boolean that 
+                  controls whether or not the Poller should begin polling for 
+                  updates on application startup or whether it should wait until 
+                  it is explicitly started 
+                  programmatically.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 2">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 106.8pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=142>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">DownloadOnDetection<O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 397.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=530>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">A Boolean that 
+                  controls whether or not the Poller starts<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>a download of an update 
+                  immediately after a new update is found, or whether the 
+                  download must be started explicitly by a call to the 
+                  DownloadUdpate() method.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 3">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 106.8pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=142>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">InitialPollInterval<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 397.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=530>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The number of 
+                  seconds after application startup before the first update 
+                  check is performed.<O:P></O:P></SPAN></P></TD></TR>
+              <TR style="mso-yfti-irow: 4; mso-yfti-lastrow: yes">
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 1pt solid; WIDTH: 106.8pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=142>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">PollInterval<O:P></O:P></SPAN></P>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></TD>
+                <TD 
+                style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 397.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+                vAlign=top width=530>
+                  <P class=MsoNormal><SPAN 
+                  style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">After the first 
+                  update check, the PollInterval controls the number of seconds 
+                  between each subsequent update check.<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>Note:<SPAN 
+                  style="mso-spacerun: yes"> </SPAN>By default this checks every 
+                  30 seconds; clearly you will want to reduce the frequency for 
+                  your application.<O:P></O:P></SPAN></P></TD></TR></TBODY></TABLE>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">When all is said and 
+            done, your property grid should look the 
+            following:<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><SPAN 
+            style="mso-spacerun: yes"></SPAN><!--[if gte vml 1]><V:SHAPETYPE 
+            id=_x0000_t75 stroked="f" filled="f" path="m@4@5l@4@11@9@11@9@5xe" 
+            o:preferrelative="t" o:spt="75" coordsize="21600,21600"><V:STROKE 
+            joinstyle="miter" /><V:FORMULAS><V:F 
+            eqn="if lineDrawn pixelLineWidth 0" /><V:F eqn="sum @0 1 0" /><V:F 
+            eqn="sum 0 0 @1" /><V:F eqn="prod @2 1 2" /><V:F 
+            eqn="prod @3 21600 pixelWidth" /><V:F 
+            eqn="prod @3 21600 pixelHeight" /><V:F eqn="sum @0 0 1" /><V:F 
+            eqn="prod @6 1 2" /><V:F eqn="prod @7 21600 pixelWidth" /><V:F 
+            eqn="sum @8 21600 0" /><V:F eqn="prod @7 21600 pixelHeight" /><V:F 
+            eqn="sum @10 21600 0" /></V:FORMULAS><V:PATH o:connecttype="rect" 
+            gradientshapeok="t" o:extrusionok="f" /><O:LOCK aspectratio="t" 
+            v:ext="edit" /></V:SHAPETYPE><V:SHAPE id=_x0000_i1025 
+            style="WIDTH: 6in; HEIGHT: 266.25pt" type="#_x0000_t75"><V:IMAGEDATA 
+            o:title="properties" src="AppUpdater_files/image001.jpg" 
+/></V:SHAPE><![endif]--><IMG height=355 
+            src="Dot Net Updater Component_files/appupdater_props.jpg" width=576 
+            border=0 v:shapes="_x0000_i1025"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The 
+            Samples\SampleApp\SampleApp_Complete directory contains a version of 
+            the application correctly setup.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Step 4:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Build &amp; Deploy V1 of the 
+            application to the client<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In this step we will 
+            build the V1 version of the application and deploy it to the 
+            client.<SPAN style="mso-spacerun: yes"> </SPAN>The deployment is 
+            essentially simulating what the install program for your application 
+            will do.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l28 level1 lfo26; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">1.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In the SampleApp 
+            project, open the AssemblyInfo.cs file.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Change the AssemblyVersion value 
+            from "1.0.*" to 1.0.0.0.<SPAN style="mso-spacerun: yes"> </SPAN>This 
+            will cause the built assembly to get marked with a value of 1.0.0.0 
+            instead of the ever increasing value Visual Studio normally 
+            assigns.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l28 level1 lfo26; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">2.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Build the 
+            application.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l28 level1 lfo26; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">3.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Copy the 
+            Samples\SampleApp\SampleApp_ClientSetup directory from the zip onto 
+            your local machine.<SPAN style="mso-spacerun: yes"> </SPAN>It doesnt 
+            matter where you copy it, however the program files directory is the 
+            most realistic place to put it since that is where most applications 
+            get installed. <SPAN style="mso-spacerun: yes"></SPAN>Youll notice 
+            that SampleApp_ClientSetup directory already has AppStart.exe 
+            included.<SPAN style="mso-spacerun: yes"> </SPAN>AppStart.config is 
+            already set to point into the 1.0.0.0 directory and run 
+            SampleApp.exe. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l28 level1 lfo26; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">4.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Copy the complete 
+            SampleApp (Appupdater.dll, SimpleForm.dll &amp; SampleApp.exe) from 
+            the release build directory of SampleApp to the 
+            SampleApp_ClientSetup\1.0.0.0 directory on your client.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">At this point a fully 
+            functional version of the application should be installed on the 
+            client and executable by running AppStart.exe<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Step 5: Setup the Web 
+            server<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In this step we will 
+            setup the Web server for use in rolling out application 
+            updates.<SPAN style="mso-spacerun: yes"> </SPAN>The .NET Application 
+            Updater component uses HTTP-DAV to download the application update 
+            and thus requires a Web server that supports HTTP-DAV.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>IIS 5.0 that comes with Windows 
+            2000 and newer operating systems support 
+            HTTP-DAV.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l27 level1 lfo24; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">1.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Copy the 
+            Samples/SampleApp_ServerSetup directory from the zip into the 
+            wwwroot directory of your Web server. <SPAN 
+            style="mso-spacerun: yes"></SPAN>Note:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Any location on your Web server 
+            can be used, but be sure to update the UpdateUrl property 
+            accordingly.<SPAN style="mso-spacerun: yes"> </SPAN>Notice that 
+            UpdateVersion.xml is already setup for use as the server manifest 
+            file.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l27 level1 lfo24; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">2.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">For completeness, copy 
+            the V1 version of SampleApp into the 1.0.0.0 folder of the Web 
+            server.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l27 level1 lfo24; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">3.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Enable IIS Directory 
+            Browsing for the SampleApp_ServerSetup directory on your Web 
+            server.<SPAN style="mso-spacerun: yes"> </SPAN>Since the .NET 
+            Application Updater component enumerates the contents of directories 
+            during download, Directory Browsing must be enabled.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>To do this, open the Internet 
+            Information Services manager in the control panel.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Select the SampleApp_ServerSetup 
+            folder and open its properties.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Select the Directory Tab.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Check Directory Browsing, and click OK.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Step 6:<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Automatically update the 
+            application<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">OK, now its time to see 
+            the results of all this hard work by automatically rolling out a new 
+            version.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">1.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">If the SampleApp version 
+            you deployed to the client isnt running, launch it and leave it 
+            running.<SPAN style="mso-spacerun: yes"> </SPAN>Remember to use 
+            AppStart.exe.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">2.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Go back to Visual Studio 
+            and change something noticeable on the SampleApp form (ex change the 
+            background color).<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">3.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Change the VersionInfo 
+            in AssemblyInfo.cs to be 2.0.0.0.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">4.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Rebuild.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">5.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Go to the Web server and 
+            create a 2.0.0.0 directory as a peer to the 1.0.0.0 directory.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Copy the new version of the 
+            application from the release build directory into the new 2.0.0.0 
+            directory on the Web server.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">6.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Open UpdateVersion.xml 
+            and change AvailableVersion to be 2.0.0.0.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Change the ApplicationURL to point 
+            at the new 2.0.0.0 directory.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal 
+            style="MARGIN-LEFT: 0.25in; TEXT-INDENT: -0.25in; mso-list: l30 level1 lfo30; tab-stops: list .25in"><![if !supportLists]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-fareast-font-family: Arial"><SPAN 
+            style="mso-list: Ignore">7.<SPAN 
+            style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN></SPAN></SPAN><![endif]><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Save the changes to 
+            UpdateVersion.xml.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">As soon as you save the 
+            new UpdateVersion.xml, within 30 seconds the running copy of 
+            SampleApp should detect the newly available version.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>SampleApp will then download the 
+            new version, apply the update, and pop up the default UI asking the 
+            user if they want to restart and start using the new version 
+            immediately.<SPAN style="mso-spacerun: yes"> </SPAN>Click Yes in 
+            response to this dialog.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>SampleApp should restart and be running the new version. 
+            <SPAN style="mso-spacerun: yes"></SPAN>If you look at the client 
+            deployment of SampleApp you will notice there is now a 2.0.0.0 
+            directory next to the original 1.0.0.0 directory.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The 1.0.0.0 directory will be 
+            cleaned up the next time an update occurs.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">On-Demand 
+            Install<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">By exploiting the 
+            extensible nature of the .NET Framework, the .NET Application 
+            Updater component is able to enable another feature, On-Demand 
+            installation.<SPAN style="mso-spacerun: yes"> </SPAN>By enabling 
+            On-Demand installation, only the main exe needs to be explicitly 
+            installed on the client.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            remainder of the application can be automatically downloaded and 
+            installed on an as needed basis.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">You can see this feature 
+            in action with the SampleApp you just finished building and 
+            deploying.<SPAN style="mso-spacerun: yes"> </SPAN>In SampleApp we 
+            enabled the On-Demand install feature by setting the AutoFileLoad 
+            property to true.<SPAN style="mso-spacerun: yes"> </SPAN>First close 
+            SampleApp if it is still running.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Next, in the 2.0.0.0 folder of the SampleApp client 
+            deployment, delete SimpleForm.dll.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Youll recall that SimpleForm.dll is the assembly that 
+            contains the form that is displayed when the button on SampleApp is 
+            clicked.<SPAN style="mso-spacerun: yes"> </SPAN>With SimpleForm.dll 
+            deleted, you would expect the application to throw an exception when 
+            the button is clicked.<SPAN style="mso-spacerun: yes"> </SPAN>Go 
+            ahead and try it by running SampleApp (remember to use AppStart.exe) 
+            and click the button in SampleApp.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><SPAN style="mso-spacerun: yes"></SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">What happened?<SPAN 
+            style="mso-spacerun: yes"> </SPAN>It worked.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>In fact if you look in the 2.0.0.0 
+            folder youll see that SimpleForm.dll has reappeared.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>So how did this happen?<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The CLR is fundamentally 
+            programmable and extensible.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>When the CLR could not find the SimpleForm.dll assembly, 
+            instead of simply failing, it raised the AppDomain.AssemblyResolve 
+            event.<SPAN style="mso-spacerun: yes"> </SPAN>The .NET Application 
+            Updater component hooks that event.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The .NET Application Updater component knows where a valid 
+            copy of SimpleForm.dll resides; on the deployment Web server.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>It then downloads the assembly to 
+            the local application directory and tells the CLR to try to load the 
+            assembly again.<SPAN style="mso-spacerun: yes"> </SPAN>The second 
+            load attempt then succeeds.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">On-Demand installation 
+            is enabled and disabled via the AutoFileLoad property on the .NET 
+            Application Updater component.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>It is a powerful feature that can make the initial download 
+            and install of your application tiny, but can be difficult to use 
+            correctly.<SPAN style="mso-spacerun: yes"> </SPAN>You must think 
+            hard about where the assembly boundaries reside in your application 
+            and what actions will cause an assembly to be downloaded.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Because the assembly download 
+            involves network I/O, it will take variable lengths of time to 
+            download.<SPAN style="mso-spacerun: yes"> </SPAN>During the assembly 
+            download, the application is frozen waiting for the assembly 
+            download to complete.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Deployment 
+            Security<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">While the ability to 
+            roll out application updates automatically has great benefits, it 
+            also comes with an inherent danger.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>When you make it easier to roll out updates, if not careful, 
+            you could also make it easier to roll out malicious code.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>There are two dangers.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The first danger is that someone 
+            will spoof the Web server used to deploy updates with their own Web 
+            server.<SPAN style="mso-spacerun: yes"> </SPAN>They could then use 
+            that Web server to roll out a virus in place of your 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>The easiest way 
+            to prevent spoofing or any other tampering over the wire is to use 
+            HTTPS.<SPAN style="mso-spacerun: yes"> </SPAN>To use HTTPS with the 
+            .NET Application Updater component, simply use HTTPS URLs in place 
+            of HTTP URLs.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">However, HTTPS is not a 
+            silver bullet.<SPAN style="mso-spacerun: yes"> </SPAN>There are two 
+            problems with HTTPS. The first is scalability.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Using HTTPS requires the server to 
+            encrypt all of the files that are downloaded from the Web 
+            server.<SPAN style="mso-spacerun: yes"> </SPAN>If an application 
+            update is large, the cost of encrypting the update can overburden 
+            the server.<SPAN style="mso-spacerun: yes"> </SPAN>The other issue 
+            with HTTPS is that it does nothing to address the second security 
+            danger.<SPAN style="mso-spacerun: yes"> </SPAN>The second danger has 
+            to do with your Web server being compromised, either from an insider 
+            or from an outsider hacking your server.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If your Web server is compromised, 
+            its bad enough, but if it also means that a thousand clients are 
+            also compromised via automatic updates, it could be disastrous. 
+            <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">To solve this problem, 
+            the .NET Application Updater component uses the ability to strong 
+            name a .NET assembly to verify the authenticity of the assembly upon 
+            download.<SPAN style="mso-spacerun: yes"> </SPAN>If the .NET 
+            Application Updater detects that an assembly is not signed with your 
+            applications key during download, the update is aborted.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This means that only someone that 
+            has the private key of your application can build updates that can 
+            be automatically deployed.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>.NET security is based on keeping your private key 
+            secret.<SPAN style="mso-spacerun: yes"> </SPAN>Even inside your own 
+            organization, only the few select people should have access to your 
+            private key.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">To validate assemblies, 
+            the .NET Application Updater component verifies that the public key 
+            on the exe of your current installed application matches the public 
+            key on downloaded updates.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The embedded public key can only be the same if the two 
+            assemblies were signed with the same secret private key.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Because the assembly is loaded by 
+            the CLR in order to verify its public key, the CLR does its normal 
+            hash value check to ensure the assembly is in fact a real assembly 
+            and has not been tampered with.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>If a verification check fails, it is treated just like any 
+            other update failure. <SPAN style="mso-spacerun: yes"></SPAN>To 
+            enable verification on download, simply strong name all of your 
+            application assemblies and set the ValidateAssemblies property on 
+            the .NET Application Updater component to True.<SPAN 
+            class=msoIns><INS cite=mailto:Jamie%20Cool 
+            dateTime=2002-03-04T17:10> </INS></SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Assembly validation on 
+            download works great, but in practice, applications will often have 
+            components signed with different private keys.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>For example, your application may 
+            have two files:<SPAN style="mso-spacerun: yes"> </SPAN>The exe 
+            assembly signed with your private key and a dll assembly that 
+            contains a 3<SUP>rd</SUP> party charting control you purchased to 
+            use in your application.<SPAN style="mso-spacerun: yes"> </SPAN>This 
+            3<SUP>rd</SUP> party assembly may be signed with the 3<SUP>rd</SUP> 
+            partys private key and not yours.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>What makes it even more complicated is that the set of valid 
+            private keys that can be used to sign assemblies in your application 
+            could change from version to version.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>How do you auto-update these types 
+            of applications?<SPAN style="mso-spacerun: yes"> </SPAN>To solve 
+            this problem, you create an assembly that contains a list of valid 
+            public keys for your application.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Sign this assembly with the applications main private key 
+            (the key that the exe of the application is signed with) and place 
+            this assembly in the directory with the application update on the 
+            Web server.<SPAN style="mso-spacerun: yes"> </SPAN>Before the update 
+            download process begins, the .NET Application Updater will check for 
+            a well known assembly AppUpdaterKeys.dll in the application update 
+            directory on the server.<SPAN style="mso-spacerun: yes"> </SPAN>If 
+            present, the assembly will be downloaded.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The assembly will be verified 
+            against the main application public key.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>If the signature is valid, the 
+            list of keys will be extracted.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>From that point on, any of the keys in that list will be 
+            treated as valid signatures for the files in the update.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The zip file that comes with this 
+            paper contains an AppUpdaterKeys project that can be used to build 
+            your own AppUpdaterKeys assembly.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The AppUpdaterKeys.dll also allows you to specify a set of 
+            file exceptions.<SPAN style="mso-spacerun: yes"> </SPAN>Files 
+            specified as exceptions can be downloaded and updated without 
+            passing the validation check.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>This can be useful when your application contains 
+            non-assembly files, such as pdb files for 
+            debugging.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The recommended approach 
+            to security is to use HTTPS URLs to perform update checks.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>This provides a first level of 
+            spoofing protection.<SPAN style="mso-spacerun: yes"> </SPAN>For 
+            update download, its best not to use HTTPS URLs to avoid the 
+            overhead on your Web server.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Instead, strong name your application assemblies and enable 
+            the Validate Assemblies feature.<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Extensibility and 
+            Terrarium <O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">In the sample we walked 
+            through earlier in this paper we enabled auto-deployment in an 
+            application simply by dropping a component into an application and 
+            setting some properties.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>While this works well for many applications, some 
+            applications require a higher degree of control that can only be 
+            achieved by writing code.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            .NET Application Updater component has an API that can be used to 
+            customize and replace application update behavior.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The .NET Terrarium game (<A 
+            href="http://www.gotdotnet.com/terrarium/">http://www.gotdotnet.com/terrarium/</A>) 
+            I mentioned earlier is a heavy user of these extensibility 
+            hooks.<SPAN style="mso-spacerun: yes"> </SPAN>Lets take a look at 
+            how Terrarium uses the .NET Application Updater components 
+            extensibility mechanisms.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Terrarium uses a custom 
+            XML Web service to check for updates.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Terrarium hooks the 
+            OnCheckForUpdate event of the .NET Application Updater component and 
+            calls the XML Web service within this event handler.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>OnCheckForUpdate fires on the 
+            poller thread.<SPAN style="mso-spacerun: yes"> </SPAN>Thus the XML 
+            Web service request is performed on a separate thread from the UI 
+            thread and does not lock the UI.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The call to the XML Web service passes the assembly version 
+            of the clients current Terrarium install.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The XML Web service then decides 
+            whether or not a newer update is available for that client.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Two values are returned.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The first indicates whether or not 
+            an update is available.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            second is the URL where the update resides.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>For scalability reasons, in 
+            practice, one server is used to check for updates and a separate 
+            server is used to download updates.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>On the return from the XML Web service call, if a new update 
+            is available, Terrarium sets the UpdateUrl property of the .NET 
+            Application Updater component to the URL returned from the Web 
+            service.<SPAN style="mso-spacerun: yes"> </SPAN>This instructs the 
+            .NET Application Updater to use that URL for the next update 
+            download.<SPAN style="mso-spacerun: yes"> </SPAN>Finally, Terrarium 
+            returns true in the OnCheckForUpdate event handler if an update is 
+            available. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Terrarium also uses the 
+            custom XML Web service to increase scalability.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Updates to Terrarium exceed 10 MB 
+            in size.<SPAN style="mso-spacerun: yes"> </SPAN>Terrarium also 
+            checks for updates very frequently.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>Thus, in the beginning, when a new update was rolled out, it 
+            wasnt uncommon to have hundreds of clients asking for updates at 
+            once.<SPAN style="mso-spacerun: yes"> </SPAN>This resulted in 
+            Gigabytes worth of download requests and the server couldnt handle 
+            the load.<SPAN style="mso-spacerun: yes"> </SPAN>Moving away from 
+            using HTTPS and decreasing the frequency of update checks helped the 
+            situation, but the ultimate solution was to build some intelligence 
+            into the XML Web service.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>When the server is under load, the XML Web service only tells 
+            the first X number of clients that an update is available.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>All of the rest are told that no 
+            new update is available.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            next time the clients check for updates, the next X set of clients 
+            are told an update is available.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>In this way, the update is rolled out in waves and the server 
+            is not overloaded.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Terrarium puts up its 
+            own custom UI that integrates better with the overall 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>Thus Terrarium 
+            disables the default .NET Application Updater UI.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Terrarium hooks the 
+            OnUpdateComplete event.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            OnUpdateComplete event includes a set of information, such as 
+            whether or not the update was successful, what, if anything, caused 
+            failure, and an English string with an explanation of the problem 
+            that can be presented to the user.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>The OnUpdateComplete event fires on the main UI thread of the 
+            application.<SPAN style="mso-spacerun: yes"> </SPAN>Thus Terrarium 
+            raises UI to the user, informing them of update success or failure, 
+            directly in the OnUpdateComplete event handler.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The .NET Application 
+            Updater component also includes additional APIs that allow explicit 
+            control over when actions like update checks and updates are 
+            performed.<SPAN style="mso-spacerun: yes"> </SPAN>These actions are 
+            controllable via the CheckForUpdate () and ApplyUpdate() methods 
+            respectively.<SPAN style="mso-spacerun: yes"> 
+            </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Debugging<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The source code for the 
+            .NET Application Updater component is provided so that you can debug 
+            problems and add functionality as needed.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>However, before you dive too far 
+            into the source code, this section will spell out some first level 
+            debugging options, as well as describe the most frequently 
+            encountered problems by consumers of this component.<SPAN 
+            style="mso-spacerun: yes"> </SPAN><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The .NET Application 
+            Updater creates a hidden log file named AppUpdate.log that resides 
+            in the same directory as AppStart.exe.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>All successful and failed updates 
+            are recorded in this log.<SPAN style="mso-spacerun: yes"> </SPAN>The 
+            log file is especially useful when there is a particular client 
+            machine that wont update successfully.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>You can use the log to determine 
+            when and how the update failed.<SPAN style="mso-spacerun: yes"> 
+            </SPAN>In addition, the .NET Application Updater component uses the 
+            Debug class of the .NET Framework to write out a lot of useful 
+            information.<SPAN style="mso-spacerun: yes"> </SPAN>If you run your 
+            application in the debugger, you will see this information in the 
+            output window.<SPAN style="mso-spacerun: yes"> </SPAN>You can 
+            essentially watch the .NET Application Updater go through its update 
+            steps and see where the problem is occurring. <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">If for whatever reason, 
+            you just cant get the .NET Application Updater to work, make sure of 
+            the following before you debug too far, more than likely one of 
+            these is the problem you are encountering:<O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <UL style="MARGIN-TOP: 0in" type=disc>
+              <LI class=MsoNormal 
+              style="mso-list: l8 level1 lfo34; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Do you have IIS 
+              Directory Browsing turned on?<SPAN style="mso-spacerun: yes"> 
+              </SPAN>If not, the downloader will see an empty directory on the 
+              Web server where the update resides.<SPAN 
+              style="mso-spacerun: yes"> </SPAN>The updater will then download 
+              and install an update of zero files, leaving you with the original 
+              unchanged application. See the Setting up the Web server section 
+              earlier in this paper for instructions on how to enable Directory 
+              Browsing.<O:P></O:P></SPAN> 
+              <LI class=MsoNormal 
+              style="mso-list: l8 level1 lfo34; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Do you have everything 
+              deployed correctly and the correct URLs set?<SPAN 
+              style="mso-spacerun: yes"> </SPAN>Its easy to make a mistake 
+              here.<SPAN style="mso-spacerun: yes"> </SPAN>Look at the URLs 
+              being output by the .NET Application Updater when running in the 
+              debugger.<SPAN style="mso-spacerun: yes"> </SPAN>Navigate to these 
+              URLs in the browser and make sure they are 
+              valid.<O:P></O:P></SPAN> 
+              <LI class=MsoNormal 
+              style="mso-list: l8 level1 lfo34; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">If your app is 
+              installed in the program files directory, are you an admin or 
+              power user on the box?<SPAN style="mso-spacerun: yes"> </SPAN>If 
+              not, you wont have the write access necessary to update the 
+              application.<O:P></O:P></SPAN> 
+              <LI class=MsoNormal 
+              style="mso-list: l8 level1 lfo34; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Did you create the 
+              AppUpdater object on the main UI thread of the application?<SPAN 
+              style="mso-spacerun: yes"> </SPAN>If not, the updater will not be 
+              able to present UI and will fail when firing events back to the UI 
+              thread.<O:P></O:P></SPAN> 
+              <LI class=MsoNormal 
+              style="mso-list: l8 level1 lfo34; tab-stops: list .5in"><SPAN 
+              style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Is the update 
+              succeeding, but the app failing to automatically restart to pick 
+              up new updates?<SPAN style="mso-spacerun: yes"> </SPAN>The .NET 
+              Application Updater component attempts to restart the application 
+              by calling the Application.Exit method.<SPAN 
+              style="mso-spacerun: yes"> </SPAN>However, that method is not 
+              guaranteed to shut down an application.<SPAN 
+              style="mso-spacerun: yes"> </SPAN>If you spawn &amp; leave 
+              separate threads running, it will not close the process.<SPAN 
+              style="mso-spacerun: yes"> </SPAN>The solution is to ensure that 
+              all threads are terminated via the Application.OnExit event, or 
+              hook the .NET Application Updaters OnUpdateComplete event and 
+              handle the shutdown yourself.<O:P></O:P></SPAN> </LI></UL>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal style="MARGIN-BOTTOM: 6pt"><B 
+            style="mso-bidi-font-weight: normal"><SPAN 
+            style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">Summary<O:P></O:P></SPAN></B></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ease of deployment for 
+            client applications was a major goal for the first version of the 
+            .NET Framework.<SPAN style="mso-spacerun: yes"> </SPAN>There is no 
+            other technology for building client applications that addresses the 
+            deployment problems as well as the .NET Framework.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>Ease of deployment will continue 
+            to be a major goal for future versions of the .NET Framework.<SPAN 
+            style="mso-spacerun: yes"> </SPAN>The .NET Application Updater 
+            component described here represents some of our thinking in terms of 
+            scenarios we would like to enable directly in future versions of the 
+            .NET Framework.<SPAN style="mso-spacerun: yes"> </SPAN>However, 
+            until that time the .NET Application Updater component is a great 
+            way to get started building auto-updating applications. 
+            <O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P>
+            <P class=MsoNormal><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><O:P></O:P></SPAN></P></DIV><!-- End Content --><SPAN 
+            id=_ctl2_BottomNavigation></SPAN><BR clear=all><A 
+            id=_ctl2_PrintVersionBottomButton 
+            style="FONT-SIZE: 7pt; FONT-STYLE: italic" 
+            href="javascript:__doPostBack('_ctl2:PrintVersionBottomButton','')">[Printer 
+            friendly version]</A> 
+            <HR color=#3399ff SIZE=1>
+            <SPAN style="FONT-SIZE: xx-small; FONT-FAMILY: verdana"><SPAN 
+            id=_ctl2_CopyRightLabel>© Copyright 2003 Microsoft Corporation. All 
+            Rights Reserved.</SPAN><BR><A id=_ctl2_TermsOfUseLink 
+            href="http://www.gotdotnet.com/content/legal/tou.aspx">Terms of 
+            Use</A> | <A id=_ctl2_PrivacyStatement 
+            href="http://www.gotdotnet.com/content/legal/privacy.aspx">Privacy 
+            Statement</A> | <A id=_ctl2_CodeOfConduct 
+            href="http://www.gotdotnet.com/content/legal/conduct.aspx">Code of 
+            Conduct</A> | <A id=_ctl2_MeetTeam 
+            href="http://www.gotdotnet.com/team/gdnteam.aspx">About the team</A> 
+            | <A id=_ctl2_ContactUs 
+            href="http://www.gotdotnet.com/utility/feedback/feedback.aspx">Contact 
+            Us</A> 
+            <P></SPAN></P></TD>
+          <TD id=_ctl2_MiddleRightColumn 
+          style="BACKGROUND-POSITION: right 50%; BACKGROUND-IMAGE: url(/images/rnav_bg.gif); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff" 
+          vAlign=top><SPAN id=_ctl2_RightNavigation></SPAN><IMG height=1 
+            alt="" src="Dot Net Updater Component_files/1pix.gif" width=63 
+            border=0></TD></TR></TBODY></TABLE></TD></TR>
+  <TR id=_ctl2_BottomRow>
+    <TD 
+    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px" 
+    background="Dot Net Updater Component_files/footer_bg.gif"><IMG height=28 
+      alt="" hspace=0 src="Dot Net Updater Component_files/footer_r.gif" 
+      width=43 align=right border=0> <IMG height=28 alt="" 
+      src="Dot Net Updater Component_files/footer_l.gif" width=61 
+  border=0></TD></TR></TBODY></TABLE></FORM></BODY></HTML>
